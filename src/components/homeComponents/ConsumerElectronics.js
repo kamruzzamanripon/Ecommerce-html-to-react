@@ -1,0 +1,537 @@
+import React,{Fragment} from 'react'
+
+function ConsumerElectronics() {
+    return (
+        <Fragment>
+             <section className="section-maker">
+          <div className="container">
+            <div className="sec-maker-header text-center">
+              <h3 className="sec-maker-h3">Consumer Electronics</h3>
+              <ul className="nav tab-nav-style-1-a justify-content-center">
+                <li className="nav-item">
+                  <a className="nav-link active" data-toggle="tab" href="#consumer-latest-products">Latest Products
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" data-toggle="tab" href="#consumer-best-selling-products">Best Selling</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" data-toggle="tab" href="#consumer-top-rating-products">Top Rating</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" data-toggle="tab" href="#consumer-featured-products">Featured Products</a>
+                </li>
+              </ul>
+              <span className="sec-maker-span-text u-s-m-b-8 d-block">Select products in specific category</span>
+            </div>
+            <div className="wrapper-content">
+              <div className="outer-area-tab">
+                <div className="tab-content">
+                  <div className="tab-pane active show fade" id="consumer-latest-products">
+                    <div className="row align-items-center">
+                      <div className="col-lg-1 col-md-12">
+                        <ul className="nav tab-nav-style-2-a">
+                          <li className="nav-item">
+                            <a className="nav-link active" data-toggle="tab" href="#laptops" title="Laptops">
+                              <i className="ion ion-md-laptop" />
+                            </a>
+                          </li>
+                          <li className="nav-item">
+                            <a className="nav-link" data-toggle="tab" href="#pc-and-accessories" title="PC & Accessories">
+                              <i className="ion ion-ios-settings" />
+                            </a>
+                          </li>
+                          <li className="nav-item">
+                            <a className="nav-link" data-toggle="tab" href="#tv" title="TV's">
+                              <i className="ion ion-md-tv" />
+                            </a>
+                          </li>
+                          <li className="nav-item">
+                            <a className="nav-link" data-toggle="tab" href="#cam-corder" title="Camera & Camcorders">
+                              <i className="ion ion-md-camera" />
+                            </a>
+                          </li>
+                          <li className="nav-item">
+                            <a className="nav-link" data-toggle="tab" href="#audio-amplifiers" title="Audio & Amplifiers">
+                              <i className="ion ion-md-microphone" />
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="col-lg-11 col-md-12">
+                        <div className="tab-content">
+                          <div className="tab-pane fade show active" id="laptops">
+                            <div className="slider-fouc">
+                              <div className="specific-category-slider owl-carousel" data-item={3}>
+                                <div className="item">
+                                  <div className="image-container">
+                                    <a className="item-img-wrapper-link" href="single-product.html">
+                                      <img className="img-fluid" src="images/product/product@3x.jpg" alt="Product" />
+                                    </a>
+                                    <div className="item-action-behaviors">
+                                      <a className="item-quick-look" data-toggle="modal" href="#quick-view">Quick Look</a>
+                                      <a className="item-mail" href="javascript:void(0)">Mail</a>
+                                      <a className="item-addwishlist" href="javascript:void(0)">Add to Wishlist
+                                      </a>
+                                      <a className="item-addCart" href="javascript:void(0)">Add to Cart
+                                      </a>
+                                    </div>
+                                  </div>
+                                  <div className="item-content">
+                                    <div className="what-product-is">
+                                      <ul className="bread-crumb">
+                                        <li className="has-separator">
+                                          <a href="shop-v1-root-category.html">Consumer Electronics
+                                          </a>
+                                        </li>
+                                        <li>
+                                          <a href="shop-v2-sub-category.html">Laptops</a>
+                                        </li>
+                                      </ul>
+                                      <h6 className="item-title">
+                                        <a href="single-product.html">HP Pavilion 15 Notebook
+                                        </a>
+                                      </h6>
+                                      <div className="item-stars">
+                                        <div className="star" title="0 out of 5 - based on 0 Reviews">
+                                          <span style={{width: 0}} />
+                                        </div>
+                                        <span>(0)</span>
+                                      </div>
+                                    </div>
+                                    <div className="price-template">
+                                      <div className="item-new-price">
+                                        $55.00
+                                      </div>
+                                      <div className="item-old-price">
+                                        $60.00
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div className="tag new">
+                                    <span>NEW</span>
+                                  </div>
+                                </div>
+                                <div className="item">
+                                  <div className="image-container">
+                                    <a className="item-img-wrapper-link" href="single-product.html">
+                                      <img className="img-fluid" src="images/product/product@3x.jpg" alt="Product" />
+                                    </a>
+                                    <div className="item-action-behaviors">
+                                      <a className="item-quick-look" data-toggle="modal" href="#quick-view">Quick Look</a>
+                                      <a className="item-mail" href="javascript:void(0)">Mail</a>
+                                      <a className="item-addwishlist" href="javascript:void(0)">Add to Wishlist
+                                      </a>
+                                      <a className="item-addCart" href="javascript:void(0)">Add to Cart
+                                      </a>
+                                    </div>
+                                  </div>
+                                  <div className="item-content">
+                                    <div className="what-product-is">
+                                      <ul className="bread-crumb">
+                                        <li className="has-separator">
+                                          <a href="shop-v1-root-category.html">Consumer Electronics
+                                          </a>
+                                        </li>
+                                        <li>
+                                          <a href="shop-v2-sub-category.html">Laptops</a>
+                                        </li>
+                                      </ul>
+                                      <h6 className="item-title">
+                                        <a href="single-product.html">Apple Macbook Pro 2017</a>
+                                      </h6>
+                                      <div className="item-stars">
+                                        <div className="star" title="0 out of 5 - based on 0 Reviews">
+                                          <span style={{width: 0}} />
+                                        </div>
+                                        <span>(0)</span>
+                                      </div>
+                                    </div>
+                                    <div className="price-template">
+                                      <div className="item-new-price">
+                                        $55.00
+                                      </div>
+                                      <div className="item-old-price">
+                                        $60.00
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className="item">
+                                  <div className="image-container">
+                                    <a className="item-img-wrapper-link" href="single-product.html">
+                                      <img className="img-fluid" src="images/product/product@3x.jpg" alt="Product" />
+                                    </a>
+                                    <div className="item-action-behaviors">
+                                      <a className="item-quick-look" data-toggle="modal" href="#quick-view">Quick Look</a>
+                                      <a className="item-mail" href="javascript:void(0)">Mail</a>
+                                      <a className="item-addwishlist" href="javascript:void(0)">Add to Wishlist
+                                      </a>
+                                      <a className="item-addCart" href="javascript:void(0)">Add to Cart
+                                      </a>
+                                    </div>
+                                  </div>
+                                  <div className="item-content">
+                                    <div className="what-product-is">
+                                      <ul className="bread-crumb">
+                                        <li className="has-separator">
+                                          <a href="shop-v1-root-category.html">Consumer Electronics
+                                          </a>
+                                        </li>
+                                        <li>
+                                          <a href="shop-v2-sub-category.html">Laptops</a>
+                                        </li>
+                                      </ul>
+                                      <h6 className="item-title">
+                                        <a href="single-product.html">Dell Inspiron 15</a>
+                                      </h6>
+                                      <div className="item-stars">
+                                        <div className="star" title="0 out of 5 - based on 0 Reviews">
+                                          <span style={{width: 0}} />
+                                        </div>
+                                        <span>(0)</span>
+                                      </div>
+                                    </div>
+                                    <div className="price-template">
+                                      <div className="item-new-price">
+                                        $55.00
+                                      </div>
+                                      <div className="item-old-price">
+                                        $60.00
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div className="tag sale">
+                                    <span>SALE</span>
+                                  </div>
+                                </div>
+                                <div className="item">
+                                  <div className="image-container">
+                                    <a className="item-img-wrapper-link" href="single-product.html">
+                                      <img className="img-fluid" src="images/product/product@3x.jpg" alt="Product" />
+                                    </a>
+                                    <div className="item-action-behaviors">
+                                      <a className="item-quick-look" data-toggle="modal" href="#quick-view">Quick Look</a>
+                                      <a className="item-mail" href="javascript:void(0)">Mail</a>
+                                      <a className="item-addwishlist" href="javascript:void(0)">Add to Wishlist
+                                      </a>
+                                      <a className="item-addCart" href="javascript:void(0)">Add to Cart
+                                      </a>
+                                    </div>
+                                  </div>
+                                  <div className="item-content">
+                                    <div className="what-product-is">
+                                      <ul className="bread-crumb">
+                                        <li className="has-separator">
+                                          <a href="shop-v1-root-category.html">Consumer Electronics
+                                          </a>
+                                        </li>
+                                        <li>
+                                          <a href="shop-v2-sub-category.html">Laptops</a>
+                                        </li>
+                                      </ul>
+                                      <h6 className="item-title">
+                                        <a href="single-product.html">Dell Inspiron 1525</a>
+                                      </h6>
+                                      <div className="item-stars">
+                                        <div className="star" title="0 out of 5 - based on 0 Reviews">
+                                          <span style={{width: 0}} />
+                                        </div>
+                                        <span>(0)</span>
+                                      </div>
+                                    </div>
+                                    <div className="price-template">
+                                      <div className="item-new-price">
+                                        $55.00
+                                      </div>
+                                      <div className="item-old-price">
+                                        $60.00
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div className="tag discount">
+                                    <span>-15%</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="tab-pane fade" id="pc-and-accessories">
+                            {/* Product Not Found */}
+                            <div className="product-not-found">
+                              <div className="not-found">
+                                <h2>SORRY!</h2>
+                                <h6>There is not any product in specific catalogue.</h6>
+                              </div>
+                            </div>
+                            {/* Product Not Found /- */}
+                          </div>
+                          <div className="tab-pane fade" id="tv">
+                            <div className="slider-fouc">
+                              <div className="specific-category-slider owl-carousel" data-item={3}>
+                                <div className="item">
+                                  <div className="image-container">
+                                    <a className="item-img-wrapper-link" href="single-product.html">
+                                      <img className="img-fluid" src="images/product/product@3x.jpg" alt="Product" />
+                                    </a>
+                                    <div className="item-action-behaviors">
+                                      <a className="item-quick-look" data-toggle="modal" href="#quick-view">Quick Look</a>
+                                      <a className="item-mail" href="javascript:void(0)">Mail</a>
+                                      <a className="item-addwishlist" href="javascript:void(0)">Add to Wishlist
+                                      </a>
+                                      <a className="item-addCart" href="javascript:void(0)">Add to Cart
+                                      </a>
+                                    </div>
+                                  </div>
+                                  <div className="item-content">
+                                    <div className="what-product-is">
+                                      <ul className="bread-crumb">
+                                        <li className="has-separator">
+                                          <a href="shop-v1-root-category.html">Consumer Electronics
+                                          </a>
+                                        </li>
+                                        <li>
+                                          <a href="shop-v2-sub-category.html">TV/LCD/LED
+                                          </a>
+                                        </li>
+                                      </ul>
+                                      <h6 className="item-title">
+                                        <a href="single-product.html">Hisense 4k LED TV</a>
+                                      </h6>
+                                      <div className="item-stars">
+                                        <div className="star" title="0 out of 5 - based on 0 Reviews">
+                                          <span style={{width: 0}} />
+                                        </div>
+                                        <span>(0)</span>
+                                      </div>
+                                    </div>
+                                    <div className="price-template">
+                                      <div className="item-new-price">
+                                        $55.00
+                                      </div>
+                                      <div className="item-old-price">
+                                        $60.00
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div className="tag new">
+                                    <span>NEW</span>
+                                  </div>
+                                </div>
+                                <div className="item">
+                                  <div className="image-container">
+                                    <a className="item-img-wrapper-link" href="single-product.html">
+                                      <img className="img-fluid" src="images/product/product@3x.jpg" alt="Product" />
+                                    </a>
+                                    <div className="item-action-behaviors">
+                                      <a className="item-quick-look" data-toggle="modal" href="#quick-view">Quick Look</a>
+                                      <a className="item-mail" href="javascript:void(0)">Mail</a>
+                                      <a className="item-addwishlist" href="javascript:void(0)">Add to Wishlist
+                                      </a>
+                                      <a className="item-addCart" href="javascript:void(0)">Add to Cart
+                                      </a>
+                                    </div>
+                                  </div>
+                                  <div className="item-content">
+                                    <div className="what-product-is">
+                                      <ul className="bread-crumb">
+                                        <li className="has-separator">
+                                          <a href="shop-v1-root-category.html">Consumer Electronics
+                                          </a>
+                                        </li>
+                                        <li>
+                                          <a href="shop-v2-sub-category.html">TV/LCD/LED
+                                          </a>
+                                        </li>
+                                      </ul>
+                                      <h6 className="item-title">
+                                        <a href="single-product.html">TCL 4k LED TV</a>
+                                      </h6>
+                                      <div className="item-stars">
+                                        <div className="star" title="0 out of 5 - based on 0 Reviews">
+                                          <span style={{width: 0}} />
+                                        </div>
+                                        <span>(0)</span>
+                                      </div>
+                                    </div>
+                                    <div className="price-template">
+                                      <div className="item-new-price">
+                                        $55.00
+                                      </div>
+                                      <div className="item-old-price">
+                                        $60.00
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className="item">
+                                  <div className="image-container">
+                                    <a className="item-img-wrapper-link" href="single-product.html">
+                                      <img className="img-fluid" src="images/product/product@3x.jpg" alt="Product" />
+                                    </a>
+                                    <div className="item-action-behaviors">
+                                      <a className="item-quick-look" data-toggle="modal" href="#quick-view">Quick Look</a>
+                                      <a className="item-mail" href="javascript:void(0)">Mail</a>
+                                      <a className="item-addwishlist" href="javascript:void(0)">Add to Wishlist
+                                      </a>
+                                      <a className="item-addCart" href="javascript:void(0)">Add to Cart
+                                      </a>
+                                    </div>
+                                  </div>
+                                  <div className="item-content">
+                                    <div className="what-product-is">
+                                      <ul className="bread-crumb">
+                                        <li className="has-separator">
+                                          <a href="shop-v1-root-category.html">Consumer Electronics
+                                          </a>
+                                        </li>
+                                        <li>
+                                          <a href="shop-v2-sub-category.html">TV/LCD/LED
+                                          </a>
+                                        </li>
+                                      </ul>
+                                      <h6 className="item-title">
+                                        <a href="single-product.html">Sony 4k LED TV
+                                        </a>
+                                      </h6>
+                                      <div className="item-stars">
+                                        <div className="star" title="0 out of 5 - based on 0 Reviews">
+                                          <span style={{width: 0}} />
+                                        </div>
+                                        <span>(0)</span>
+                                      </div>
+                                    </div>
+                                    <div className="price-template">
+                                      <div className="item-new-price">
+                                        $55.00
+                                      </div>
+                                      <div className="item-old-price">
+                                        $60.00
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div className="tag sale">
+                                    <span>SALE</span>
+                                  </div>
+                                </div>
+                                <div className="item">
+                                  <div className="image-container">
+                                    <a className="item-img-wrapper-link" href="single-product.html">
+                                      <img className="img-fluid" src="images/product/product@3x.jpg" alt="Product" />
+                                    </a>
+                                    <div className="item-action-behaviors">
+                                      <a className="item-quick-look" data-toggle="modal" href="#quick-view">Quick Look</a>
+                                      <a className="item-mail" href="javascript:void(0)">Mail</a>
+                                      <a className="item-addwishlist" href="javascript:void(0)">Add to Wishlist
+                                      </a>
+                                      <a className="item-addCart" href="javascript:void(0)">Add to Cart
+                                      </a>
+                                    </div>
+                                  </div>
+                                  <div className="item-content">
+                                    <div className="what-product-is">
+                                      <ul className="bread-crumb">
+                                        <li className="has-separator">
+                                          <a href="shop-v1-root-category.html">Consumer Electronics
+                                          </a>
+                                        </li>
+                                        <li>
+                                          <a href="shop-v2-sub-category.html">TV/LCD/LED
+                                          </a>
+                                        </li>
+                                      </ul>
+                                      <h6 className="item-title">
+                                        <a href="single-product.html">China Petrei 4k LED TV</a>
+                                      </h6>
+                                      <div className="item-stars">
+                                        <div className="star" title="0 out of 5 - based on 0 Reviews">
+                                          <span style={{width: 0}} />
+                                        </div>
+                                        <span>(0)</span>
+                                      </div>
+                                    </div>
+                                    <div className="price-template">
+                                      <div className="item-new-price">
+                                        $55.00
+                                      </div>
+                                      <div className="item-old-price">
+                                        $60.00
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div className="tag discount">
+                                    <span>-15%</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="tab-pane fade" id="cam-corder">
+                            {/* Product Not Found */}
+                            <div className="product-not-found">
+                              <div className="not-found">
+                                <h2>SORRY!</h2>
+                                <h6>There is not any product in specific catalogue.</h6>
+                              </div>
+                            </div>
+                            {/* Product Not Found /- */}
+                          </div>
+                          <div className="tab-pane fade" id="audio-amplifiers">
+                            {/* Product Not Found */}
+                            <div className="product-not-found">
+                              <div className="not-found">
+                                <h2>SORRY!</h2>
+                                <h6>There is not any product in specific catalogue.</h6>
+                              </div>
+                            </div>
+                            {/* Product Not Found /- */}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="tab-pane fade" id="consumer-best-selling-products">
+                    {/* Product Not Found */}
+                    <div className="product-not-found">
+                      <div className="not-found">
+                        <h2>SORRY!</h2>
+                        <h6>There is not any product in specific catalogue.</h6>
+                      </div>
+                    </div>
+                    {/* Product Not Found /- */}
+                  </div>
+                  <div className="tab-pane fade" id="consumer-top-rating-products">
+                    {/* Product Not Found */}
+                    <div className="product-not-found">
+                      <div className="not-found">
+                        <h2>SORRY!</h2>
+                        <h6>There is not any product in specific catalogue.</h6>
+                      </div>
+                    </div>
+                    {/* Product Not Found /- */}
+                  </div>
+                  <div className="tab-pane fade" id="consumer-featured-products">
+                    {/* Product Not Found */}
+                    <div className="product-not-found">
+                      <div className="not-found">
+                        <h2>SORRY!</h2>
+                        <h6>There is not any product in specific catalogue.</h6>
+                      </div>
+                    </div>
+                    {/* Product Not Found /- */}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="redirect-link-wrapper text-center u-s-p-t-25 u-s-p-b-80">
+              <a className="redirect-link" href="store-directory.html">
+                <span>View more on this category</span>
+              </a>
+            </div>
+          </div>
+        </section>
+        </Fragment>
+    )
+}
+
+export default ConsumerElectronics
