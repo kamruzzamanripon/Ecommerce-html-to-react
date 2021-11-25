@@ -1,10 +1,29 @@
 import React, {Fragment} from 'react'
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 function MainSlider() {
+    const options = {
+        items: 1,
+        autoplay: true,
+        autoplayTimeout: 8000,
+        loop: false,
+        dots: false,
+        rewind: true, // Go backwards when the boundary has reached
+        nav: true,// Show next/prev buttons
+        //   navContainerClass: 'owl-nav' by default,
+        navElement: 'div',
+        navClass: ['main-slider-previous', 'main-slider-next'],// Add these classes on navElement
+        navText: ['<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>'],
+    };
     return (
         <Fragment>
             <div className="default-height ph-item">
-            <div className="slider-main owl-carousel">
+            <OwlCarousel
+                className='owl-theme slider-main' 
+                {...options}
+            >
                 <div className="bg-image one">
                 <div className="slide-content slide-animation">
                     <h1>Casual Clothing</h1>
@@ -26,7 +45,7 @@ function MainSlider() {
                     <h2 style={{color: '#333'}}># shopping</h2>
                 </div>
                 </div>
-            </div>
+            </OwlCarousel>
             </div>
         </Fragment>
     )

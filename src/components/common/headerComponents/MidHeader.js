@@ -1,7 +1,14 @@
-import React, {Fragment} from 'react'
+import React, {Fragment, useState} from 'react'
 import {Link} from 'react-router-dom'
+import MiniCart from './MiniCart'
 
 function MidHeader() {
+  const [miniCartTigger, setMiniCartTigger] = useState(false)
+  //console.log(miniCartTigger)
+
+  const miniCartTiggerToggle =()=>{
+    miniCartTigger === false ? setMiniCartTigger(true) : setMiniCartTigger(false)
+  }
     return (
         <Fragment>
             <div className="full-layer-mid-header">
@@ -60,7 +67,7 @@ function MidHeader() {
                         </a>
                       </li>
                       <li>
-                        <a id="mini-cart-trigger">
+                        <a id="mini-cart-trigger" onClick={miniCartTiggerToggle}>
                           <i className="ion ion-md-basket" />
                           <span className="item-counter">4</span>
                           <span className="item-price">$220.00</span>
@@ -72,6 +79,14 @@ function MidHeader() {
               </div>
             </div>
           </div>
+
+           {/* Mini Cart */}
+           <MiniCart 
+             miniCartTigger={miniCartTigger}
+             miniCartTiggerToggle={miniCartTiggerToggle}
+            />
+           {/* Mini Cart /- */}
+
         </Fragment>
     )
 }

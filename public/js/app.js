@@ -122,18 +122,18 @@ $(function () {
     /**
      * Attach Click Event on Mini Cart Anchor
      */
-    const attachClickOnMiniCart = function () {
-        //  let $href = $('#mini-cart-trigger'.attr('href');
-        //   window.location.href = $href; //causes the browser to refresh and
-        // load the requested url
-        $('#mini-cart-trigger').on('click', function () {
-            $('.mini-cart-wrapper').addClass('mini-cart-open');
-        });
+    // const attachClickOnMiniCart = function () {
+    //     //  let $href = $('#mini-cart-trigger'.attr('href');
+    //     //   window.location.href = $href; //causes the browser to refresh and
+    //     // load the requested url
+    //     $('#mini-cart-trigger').on('click', function () {
+    //         $('.mini-cart-wrapper').addClass('mini-cart-open');
+    //     });
 
-        $('#mini-cart-close').on('click', function () {
-            $('.mini-cart-wrapper').removeClass('mini-cart-open');
-        });
-    };
+    //     $('#mini-cart-close').on('click', function () {
+    //         $('.mini-cart-wrapper').removeClass('mini-cart-open');
+    //     });
+    // };
 
     /**
      * Attach Click Event on VMenu
@@ -322,7 +322,7 @@ $(function () {
         //  Attach Click Event on Search Button
         attachClickOnResponsiveSearchForm();
         //  Attach Click Event on Mini Cart Anchor
-        attachClickOnMiniCart();
+        //attachClickOnMiniCart();
         // Attach Click Event on VMenu
         attachClickOnVMenu();
        // Manually Restart Pace-js when we change any tab
@@ -342,106 +342,106 @@ $(function () {
     /**
      * Shows Newsletter Modal After 5sec = 5000milliseconds
      */
-    const showNewsletterModal = function () {
-            setTimeout(function () {
-                // Manually opens a modal
-                //$('#newsletter-modal').modal('show');
-            }, 5000);
-    };
+    // const showNewsletterModal = function () {
+    //         setTimeout(function () {
+    //             // Manually opens a modal
+    //             $('#newsletter-modal').modal('show');
+    //         }, 5000);
+    // };
     /**
      * Initialize Main Slider
      */
-    const sliderMain = function () {
-        let $owl = $('.slider-main');
-        $owl.owlCarousel({
-            items: 1,
-            autoplay: true,
-			autoplayTimeout: 8000,
-            loop: false,
-            dots: false,
-            rewind: true, // Go backwards when the boundary has reached
-            nav: true,// Show next/prev buttons
-            //   navContainerClass: 'owl-nav' by default,
-            navElement: 'div',
-            navClass: ['main-slider-previous', 'main-slider-next'],// Add these classes on navElement
-            navText: ['<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>'], // by default text prev, next will not show
-        });
+    // const sliderMain = function () {
+    //     let $owl = $('.slider-main');
+    //     $owl.owlCarousel({
+    //         items: 1,
+    //         autoplay: true,
+	// 		autoplayTimeout: 8000,
+    //         loop: false,
+    //         dots: false,
+    //         rewind: true, // Go backwards when the boundary has reached
+    //         nav: true,// Show next/prev buttons
+    //         //   navContainerClass: 'owl-nav' by default,
+    //         navElement: 'div',
+    //         navClass: ['main-slider-previous', 'main-slider-next'],// Add these classes on navElement
+    //         navText: ['<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>'], // by default text prev, next will not show
+    //     });
 
-    };
+    // };
     /**
      * Initialize owl-carousel for all product-place section on page
      */
-    const productSlider = function () {
-        // Get Collection of all Product Slider
-        let $productsSlider = $('.products-slider');
-        $productsSlider.on('initialize.owl.carousel',function () {
-           $(this).closest('.slider-fouc').removeAttr('class');
-        }).each(function () {
-            let thisInstance = $(this);
-            let itemPerLine = thisInstance.data('item');
-            thisInstance.owlCarousel({
-                autoplay: false,
-                loop: false,
-                dots: false,
-                rewind: true,
-                nav: true,
-                navElement: 'div',
-                navClass: ['product-slider-previous', 'product-slider-next'],
-                navText: ['<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>'],
-                responsive: {
-                    0: {
-                        items: 1,
-                    },
-                    768: {
-                        items: itemPerLine - 2,
-                    },
-                    991: {
-                        items: itemPerLine - 1,
-                    },
-                    1200: {
-                        items: itemPerLine,
-                    },
-                }
-            });
-        });
-    };
+    // const productSlider = function () {
+    //     // Get Collection of all Product Slider
+    //     let $productsSlider = $('.products-slider');
+    //     $productsSlider.on('initialize.owl.carousel',function () {
+    //        $(this).closest('.slider-fouc').removeAttr('class');
+    //     }).each(function () {
+    //         let thisInstance = $(this);
+    //         let itemPerLine = thisInstance.data('item');
+    //         thisInstance.owlCarousel({
+    //             autoplay: false,
+    //             loop: false,
+    //             dots: false,
+    //             rewind: true,
+    //             nav: true,
+    //             navElement: 'div',
+    //             navClass: ['product-slider-previous', 'product-slider-next'],
+    //             navText: ['<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>'],
+    //             responsive: {
+    //                 0: {
+    //                     items: 1,
+    //                 },
+    //                 768: {
+    //                     items: itemPerLine - 2,
+    //                 },
+    //                 991: {
+    //                     items: itemPerLine - 1,
+    //                 },
+    //                 1200: {
+    //                     items: itemPerLine,
+    //                 },
+    //             }
+    //         });
+    //     });
+    // };
     /**
      * Initialize owl-carousel for all Specific Category section on page
      */
-    const SpecificCategorySlider = function () {
-        // Get Collection of all Product Slider
-        let $specificCategorySlider = $('.specific-category-slider');
-        $specificCategorySlider.on('initialize.owl.carousel',function () {
-            $(this).closest('.slider-fouc').removeAttr('class');
-        }).each(function () {
-            let thisInstance = $(this);
-            let itemPerLine = thisInstance.data('item');
-            thisInstance.owlCarousel({
-                autoplay: false,
-                loop: false,
-                dots: false,
-                rewind: true,
-                nav: true,
-                navElement: 'div',
-                navClass: ['specific-category-slider-previous', 'specific-category-slider-next'],
-                navText: ['<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>'],
-                responsive: {
-                    0: {
-                        items: 1,
-                    },
-                    768: {
-                        items: 2,
-                    },
-                    991: {
-                        items: itemPerLine -1,
-                    },
-                    1200: {
-                        items: itemPerLine,
-                    },
-                }
-            });
-        });
-    };
+    // const SpecificCategorySlider = function () {
+    //     // Get Collection of all Product Slider
+    //     let $specificCategorySlider = $('.specific-category-slider');
+    //     $specificCategorySlider.on('initialize.owl.carousel',function () {
+    //         $(this).closest('.slider-fouc').removeAttr('class');
+    //     }).each(function () {
+    //         let thisInstance = $(this);
+    //         let itemPerLine = thisInstance.data('item');
+    //         thisInstance.owlCarousel({
+    //             autoplay: false,
+    //             loop: false,
+    //             dots: false,
+    //             rewind: true,
+    //             nav: true,
+    //             navElement: 'div',
+    //             navClass: ['specific-category-slider-previous', 'specific-category-slider-next'],
+    //             navText: ['<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>'],
+    //             responsive: {
+    //                 0: {
+    //                     items: 1,
+    //                 },
+    //                 768: {
+    //                     items: 2,
+    //                 },
+    //                 991: {
+    //                     items: itemPerLine -1,
+    //                 },
+    //                 1200: {
+    //                     items: itemPerLine,
+    //                 },
+    //             }
+    //         });
+    //     });
+    // };
     /**
      * On Product Slider Tabs: If content is hidden, Owl-carousel refuses to get the dimensions,
      * Sounds like because by default un-active `tab` is set to "display: none"
@@ -461,53 +461,53 @@ $(function () {
     /**
      * Initialize owl-carousel for brand slider
      */
-    const brandSlider = function () {
-        let thisInstance = $('.brand-slider-content');
-        let itemPerLine = thisInstance.data('item');
-        thisInstance.owlCarousel({
-            autoplay: true,
-			autoplayTimeout: 8000,
-            loop: false,
-            dots: false,
-            rewind: true,
-            nav: true,
-            navElement: 'div',
-            navClass: ['brand-slider-previous', 'brand-slider-next'],
-            navText: ['<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>'],
-            responsive: {
-                0: {
-                    items: 1,
-                },
-                768: {
-                    items: 3,
-                },
-                991: {
-                    items: itemPerLine,
-                },
-                1200: {
-                    items: itemPerLine,
-                },
-            }
-        });
-    };
+    // const brandSlider = function () {
+    //     let thisInstance = $('.brand-slider-content');
+    //     let itemPerLine = thisInstance.data('item');
+    //     thisInstance.owlCarousel({
+    //         autoplay: true,
+	// 		autoplayTimeout: 8000,
+    //         loop: false,
+    //         dots: false,
+    //         rewind: true,
+    //         nav: true,
+    //         navElement: 'div',
+    //         navClass: ['brand-slider-previous', 'brand-slider-next'],
+    //         navText: ['<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>'],
+    //         responsive: {
+    //             0: {
+    //                 items: 1,
+    //             },
+    //             768: {
+    //                 items: 3,
+    //             },
+    //             991: {
+    //                 items: itemPerLine,
+    //             },
+    //             1200: {
+    //                 items: itemPerLine,
+    //             },
+    //         }
+    //     });
+    // };
 
 
 
     $(function () {
-        sliderMain();
-        productSlider();
-        SpecificCategorySlider();
+        //sliderMain();
+        //productSlider();
+        //SpecificCategorySlider();
         onTabChangeRefreshPositionOfCarousel();
-        brandSlider();
+        //brandSlider();
     });
 
     /**
      * Check everything including DOM elements and images loaded
      */
-    $(window).on('load',function () {
-        showNewsletterModal();
-       $('.ph-item').removeClass('ph-item');
-    });
+    // $(window).on('load',function () {
+    //     showNewsletterModal();
+    //    $('.ph-item').removeClass('ph-item');
+    // });
 
 })(jQuery, window, document);
 

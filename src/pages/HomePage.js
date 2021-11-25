@@ -40,9 +40,9 @@ function HomePage() {
         {/* Men-Clothing */}
         <MenClothing/>
         
-        {/* Men-Clothing-Timing-Section */}
+        {/* Men-Clothing-Timing-Section / HOT DEALS */}
         <MenClothingTimingSection/>
-        {/* Men-Clothing-Timing-Section /- */}
+        {/* Men-Clothing-Timing-Section / HOT DEALS - */}
         
         {/* Banner-Image & View-more */}
         <BannerImageViewMore/>

@@ -1,6 +1,34 @@
 import React,{Fragment} from 'react'
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 function MobilesTablets() {
+  const optionsMenProduct = {
+    autoplay: false,
+                loop: false,
+                dots: false,
+                rewind: true,
+                nav: true,
+                navElement: 'div',
+                navClass: ['specific-category-slider-previous', 'specific-category-slider-next'],
+                navText: ['<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>'],
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    768: {
+                        items: 2,
+                    },
+                    991: {
+                        items: 3,
+                    },
+                    1200: {
+                        items: 4,
+                    },
+                }
+};
+
     return (
         <Fragment>
             <section className="section-maker">
@@ -60,8 +88,12 @@ function MobilesTablets() {
                       <div className="col-lg-11 col-md-12">
                         <div className="tab-content">
                           <div className="tab-pane fade show active" id="smart-phones">
-                            <div className="slider-fouc">
-                              <div className="specific-category-slider owl-carousel" data-item={3}>
+                            <div className="slider-foucxx">
+                              
+                              <OwlCarousel 
+                                className="specific-category-slider owl-theme" 
+                                {...optionsMenProduct} 
+                              >
                                 <div className="item">
                                   <div className="image-container">
                                     <a className="item-img-wrapper-link" href="single-product.html">
@@ -254,7 +286,8 @@ function MobilesTablets() {
                                     <span>-15%</span>
                                   </div>
                                 </div>
-                              </div>
+                              </OwlCarousel>
+
                             </div>
                           </div>
                           <div className="tab-pane fade" id="tablets">
@@ -268,8 +301,12 @@ function MobilesTablets() {
                             {/* Product Not Found /- */}
                           </div>
                           <div className="tab-pane fade" id="smart-watches">
-                            <div className="slider-fouc">
-                              <div className="specific-category-slider owl-carousel" data-item={3}>
+                            <div className="slider-foucxx">
+
+                              <OwlCarousel 
+                                className="specific-category-slider owl-theme" 
+                                {...optionsMenProduct} 
+                              >
                                 <div className="item">
                                   <div className="image-container">
                                     <a className="item-img-wrapper-link" href="single-product.html">
@@ -467,7 +504,8 @@ function MobilesTablets() {
                                     <span>-15%</span>
                                   </div>
                                 </div>
-                              </div>
+                              </OwlCarousel>
+
                             </div>
                           </div>
                           <div className="tab-pane fade" id="device-accessories">

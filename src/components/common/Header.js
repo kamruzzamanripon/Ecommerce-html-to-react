@@ -1,11 +1,11 @@
-import React, {Fragment} from 'react'
+import React, {Fragment, useState} from 'react'
 import BottomHeader from './headerComponents/BottomHeader'
 import MidHeader from './headerComponents/MidHeader'
 import MiniCart from './headerComponents/MiniCart'
 import TopHeader from './headerComponents/TopHeader'
 
 function Header(props) {
-  
+ 
     return (
         <Fragment>
              <header >
@@ -18,7 +18,7 @@ function Header(props) {
               {/* Mid-Header /- */}
               
               {/* Mini Cart */}
-              <MiniCart/>
+              {/* <MiniCart/> */}
               {/* Mini Cart /- */}
               
               {/* Bottom-Header */}

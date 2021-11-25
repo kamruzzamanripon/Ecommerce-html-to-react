@@ -1,6 +1,11 @@
 import React, {Fragment} from 'react'
 
-function MiniCart() {
+function MiniCart(props) {
+  
+
+  const miniCartTigger = ()=>{
+    props.miniCartTiggerToggle()
+  }
     return (
         <Fragment>
 
@@ -18,11 +23,11 @@ function MiniCart() {
           </div>
           {/* Responsive-Buttons /- */}
           
-            <div className="mini-cart-wrapper">
+            <div className={ props.miniCartTigger===true ? 'mini-cart-open mini-cart-wrapper' : 'mini-cart-wrapper' } >
             <div className="mini-cart">
               <div className="mini-cart-header">
                 YOUR CART
-                <button type="button" className="button ion ion-md-close" id="mini-cart-close" />
+                <button type="button" className="button ion ion-md-close" id="mini-cart-close" onClick={miniCartTigger} />
               </div>
               <ul className="mini-cart-list">
                 <li className="clearfix">
