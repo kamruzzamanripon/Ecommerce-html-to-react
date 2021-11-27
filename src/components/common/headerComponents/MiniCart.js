@@ -1,4 +1,5 @@
 import React, {Fragment} from 'react'
+import {Link} from 'react-router-dom'
 
 function MiniCart(props) {
   
@@ -54,8 +55,8 @@ function MiniCart(props) {
                 <span className="mini-total-price float-right">$220.00</span>
               </div>
               <div className="mini-action-anchors">
-                <a href="cart.html" className="cart-anchor">View Cart</a>
-                <a href="checkout.html" className="checkout-anchor">Checkout</a>
+                <Link to="/cart" className="cart-anchor">View Cart</Link>
+                <Link to="/checkout" className="checkout-anchor">Checkout</Link>
               </div>
             </div>
           </div>
