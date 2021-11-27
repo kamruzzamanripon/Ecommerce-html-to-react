@@ -1,4 +1,5 @@
 import React, {Fragment, useEffect, useState} from 'react'
+import {Link} from 'react-router-dom'
 
 function BottomHeader(props) {
     const [navDisplay, SetNavDisplay] = useState(false)
@@ -31,31 +32,31 @@ function BottomHeader(props) {
                       <div className="v-wrapper">
                         <ul className="v-list animated fadeIn">
                           <li className="js-backdrop">
-                            <a href="shop-v1-root-category.html">
+                            <Link to="/category-name">
                               <i className="ion ion-md-shirt" />
                               Men's Clothing
                               <i className="ion ion-ios-arrow-forward" />
-                            </a>
+                            </Link>
                             <button className="v-button ion ion-md-add" />
                             <div className="v-drop-right" style={{width: '700px'}}>
                               <div className="row">
                                 <div className="col-lg-4">
                                   <ul className="v-level-2">
                                     <li>
-                                      <a href="shop-v2-sub-category.html">Tops</a>
+                                      <Link to="/category/subcategory">Tops</Link>
                                       <ul>
                                         <li>
-                                          <a href="shop-v3-sub-sub-category.html">T-Shirts</a>
+                                          <Link to="/category/subcategory/subcategory">T-Shirts</Link>
                                         </li>
                                         <li>
-                                          <a href="shop-v3-sub-sub-category.html">Hoodies</a>
+                                          <Link to="/category/subcategory/subcategory">Hoodies</Link>
                                         </li>
                                         <li>
-                                          <a href="shop-v3-sub-sub-category.html">Suits</a>
+                                          <Link to="/category/subcategory/subcategory">Suits</Link>
                                         </li>
                                         <li>
-                                          <a href="shop-v4-filter-as-category.html">Black Bean T-Shirt
-                                          </a>
+                                          <Link to="/category/subcategory/subcategory">Black Bean T-Shirt
+                                          </Link>
                                         </li>
                                       </ul>
                                     </li>
@@ -64,19 +65,19 @@ function BottomHeader(props) {
                                 <div className="col-lg-4">
                                   <ul className="v-level-2">
                                     <li>
-                                      <a href="shop-v2-sub-category.html">Outwear</a>
+                                      <Link to="/category/subcategory">Outwear</Link>
                                       <ul>
                                         <li>
-                                          <a href="shop-v3-sub-sub-category.html">Jackets</a>
+                                          <Link to="/category/subcategory/subcategory">Jackets</Link>
                                         </li>
                                         <li>
-                                          <a href="shop-v3-sub-sub-category.html">Trench</a>
+                                          <Link to="/category/subcategory/subcategory">Trench</Link>
                                         </li>
                                         <li>
-                                          <a href="shop-v3-sub-sub-category.html">Parkas</a>
+                                          <Link to="/category/subcategory/subcategory">Parkas</Link>
                                         </li>
                                         <li>
-                                          <a href="shop-v3-sub-sub-category.html">Sweaters</a>
+                                          <Link to="/category/subcategory/subcategory">Sweaters</Link>
                                         </li>
                                       </ul>
                                     </li>
@@ -85,19 +86,19 @@ function BottomHeader(props) {
                                 <div className="col-lg-4">
                                   <ul className="v-level-2">
                                     <li>
-                                      <a href="shop-v1-root-category.html">Accessories</a>
+                                      <Link to="/category/subcategory">Accessories</Link>
                                       <ul>
                                         <li>
-                                          <a href="shop-v3-sub-sub-category.html">Watches</a>
+                                          <Link to="/category/subcategory/subcategory">Watches</Link>
                                         </li>
                                         <li>
-                                          <a href="shop-v3-sub-sub-category.html">Ties</a>
+                                          <Link to="/category/subcategory/subcategory">Ties</Link>
                                         </li>
                                         <li>
-                                          <a href="shop-v3-sub-sub-category.html">Scarves</a>
+                                          <Link to="/category/subcategory/subcategory">Scarves</Link>
                                         </li>
                                         <li>
-                                          <a href="shop-v3-sub-sub-category.html">Belts</a>
+                                          <Link to="/category/subcategory/subcategory">Belts</Link>
                                         </li>
                                       </ul>
                                     </li>
@@ -108,20 +109,20 @@ function BottomHeader(props) {
                                 <div className="col-lg-4">
                                   <ul className="v-level-2">
                                     <li>
-                                      <a href="shop-v2-sub-category.html">Bottoms</a>
+                                      <Link to="/category/subcategory">Bottoms</Link>
                                       <ul>
                                         <li>
-                                          <a href="shop-v3-sub-sub-category.html">Casual Pants
-                                          </a>
+                                          <Link to="/category/subcategory/subcategory">Casual Pants
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="shop-v3-sub-sub-category.html">Shoes</a>
+                                          <Link to="/category/subcategory/subcategory">Shoes</Link>
                                         </li>
                                         <li>
-                                          <a href="shop-v3-sub-sub-category.html">Jeans</a>
+                                          <Link to="/category/subcategory/subcategory">Jeans</Link>
                                         </li>
                                         <li>
-                                          <a href="shop-v3-sub-sub-category.html">Shorts</a>
+                                          <Link to="/category/subcategory/subcategory">Shorts</Link>
                                         </li>
                                       </ul>
                                     </li>
@@ -130,19 +131,19 @@ function BottomHeader(props) {
                                 <div className="col-lg-4">
                                   <ul className="v-level-2">
                                     <li>
-                                      <a href="shop-v2-sub-category.html">Underwear</a>
+                                      <Link to="/category/subcategory">Underwear</Link>
                                       <ul>
                                         <li>
-                                          <a href="shop-v3-sub-sub-category.html">Boxers</a>
+                                          <Link to="/category/subcategory/subcategory">Boxers</Link>
                                         </li>
                                         <li>
-                                          <a href="shop-v3-sub-sub-category.html">Briefs</a>
+                                          <Link to="/category/subcategory/subcategory">Briefs</Link>
                                         </li>
                                         <li>
-                                          <a href="shop-v3-sub-sub-category.html">Robes</a>
+                                          <Link to="/category/subcategory/subcategory">Robes</Link>
                                         </li>
                                         <li>
-                                          <a href="shop-v3-sub-sub-category.html">Socks</a>
+                                          <Link to="/category/subcategory/subcategory">Socks</Link>
                                         </li>
                                       </ul>
                                     </li>
@@ -151,19 +152,19 @@ function BottomHeader(props) {
                                 <div className="col-lg-4">
                                   <ul className="v-level-2">
                                     <li>
-                                      <a href="shop-v2-sub-category.html">Sunglasses</a>
+                                      <Link to="/category/subcategory">Sunglasses</Link>
                                       <ul>
                                         <li>
-                                          <a href="shop-v3-sub-sub-category.html">Pilot</a>
+                                        <Link to="/category/subcategory/subcategory">Pilot</Link>
                                         </li>
                                         <li>
-                                          <a href="shop-v3-sub-sub-category.html">Wayfarer</a>
+                                        <Link to="/category/subcategory/subcategory">Wayfarer</Link>
                                         </li>
                                         <li>
-                                          <a href="shop-v3-sub-sub-category.html">Square</a>
+                                        <Link to="/category/subcategory/subcategory">Square</Link>
                                         </li>
                                         <li>
-                                          <a href="shop-v3-sub-sub-category.html">Round</a>
+                                        <Link to="/category/subcategory/subcategory">Round</Link>
                                         </li>
                                       </ul>
                                     </li>
@@ -173,31 +174,31 @@ function BottomHeader(props) {
                             </div>
                           </li>
                           <li className="js-backdrop">
-                            <a href="shop-v1-root-category.html">
+                          <Link to="/category-name">
                               <i className="ion ion-ios-shirt" />
                               Women's Clothing
                               <i className="ion ion-ios-arrow-forward" />
-                            </a>
+                            </Link>
                             <button className="v-button ion ion-md-add" />
                             <div className="v-drop-right" style={{width: '700px'}}>
                               <div className="row">
                                 <div className="col-lg-4">
                                   <ul className="v-level-2">
                                     <li>
-                                      <a href="shop-v2-sub-category.html">Tops</a>
+                                      <Link to="/category/subcategory">Tops</Link>
                                       <ul>
                                         <li>
-                                          <a href="shop-v3-sub-sub-category.html">Dresses</a>
+                                        <Link to="/category/subcategory/subcategory">Dresses</Link>
                                         </li>
                                         <li>
-                                          <a href="shop-v3-sub-sub-category.html">Blouses &amp; Shirts
-                                          </a>
+                                        <Link to="/category/subcategory/subcategory">Blouses &amp; Shirts
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="shop-v3-sub-sub-category.html">T-shirts</a>
+                                        <Link to="/category/subcategory/subcategory">T-shirts</Link>
                                         </li>
                                         <li>
-                                          <a href="shop-v3-sub-sub-category.html">Sweater</a>
+                                        <Link to="/category/subcategory/subcategory">Sweater</Link>
                                         </li>
                                       </ul>
                                     </li>
@@ -206,21 +207,21 @@ function BottomHeader(props) {
                                 <div className="col-lg-4">
                                   <ul className="v-level-2">
                                     <li>
-                                      <a href="shop-v2-sub-category.html">Intimates</a>
+                                      <Link to="/category/subcategory">Intimates</Link>
                                       <ul>
                                         <li>
-                                          <a href="shop-v3-sub-sub-category.html">Bras</a>
+                                        <Link to="/category/subcategory/subcategory">Bras</Link>
                                         </li>
                                         <li>
-                                          <a href="shop-v3-sub-sub-category.html">Brief Sets
-                                          </a>
+                                        <Link to="/category/subcategory/subcategory">Brief Sets
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="shop-v3-sub-sub-category.html">Bustiers &amp; Corsets
-                                          </a>
+                                        <Link to="/category/subcategory/subcategory">Bustiers &amp; Corsets
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="shop-v3-sub-sub-category.html">Panties</a>
+                                        <Link to="/category/subcategory/subcategory">Panties</Link>
                                         </li>
                                       </ul>
                                     </li>
@@ -229,24 +230,24 @@ function BottomHeader(props) {
                                 <div className="col-lg-4">
                                   <ul className="v-level-2">
                                     <li>
-                                      <a href="shop-v2-sub-category.html">Wedding &amp; Events
-                                      </a>
+                                      <Link to="/category/subcategory">Wedding &amp; Events
+                                      </Link>
                                       <ul>
                                         <li>
-                                          <a href="shop-v3-sub-sub-category.html">Wedding Dresses
-                                          </a>
+                                        <Link to="/category/subcategory/subcategory">Wedding Dresses
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="shop-v2-sub-category.html">Evening Dresses
-                                          </a>
+                                        <Link to="/category/subcategory/subcategory">Evening Dresses
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="shop-v3-sub-sub-category.html">Prom Dresses
-                                          </a>
+                                        <Link to="/category/subcategory/subcategory">Prom Dresses
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="shop-v3-sub-sub-category.html">Flower Dresses
-                                          </a>
+                                        <Link to="/category/subcategory/subcategory">Flower Dresses
+                                          </Link>
                                         </li>
                                       </ul>
                                     </li>
@@ -257,19 +258,19 @@ function BottomHeader(props) {
                                 <div className="col-lg-4">
                                   <ul className="v-level-2">
                                     <li>
-                                      <a href="shop-v2-sub-category.html">Bottoms</a>
+                                      <Link to="/category/subcategory">Bottoms</Link>
                                       <ul>
                                         <li>
-                                          <a href="shop-v3-sub-sub-category.html">Skirts</a>
+                                        <Link to="/category/subcategory/subcategory">Skirts</Link>
                                         </li>
                                         <li>
-                                          <a href="shop-v3-sub-sub-category.html">Shoes</a>
+                                        <Link to="/category/subcategory/subcategory">Shoes</Link>
                                         </li>
                                         <li>
-                                          <a href="shop-v3-sub-sub-category.html">Leggings</a>
+                                        <Link to="/category/subcategory/subcategory">Leggings</Link>
                                         </li>
                                         <li>
-                                          <a href="shop-v3-sub-sub-category.html">Jeans</a>
+                                        <Link to="/category/subcategory/subcategory">Jeans</Link>
                                         </li>
                                       </ul>
                                     </li>
@@ -278,22 +279,22 @@ function BottomHeader(props) {
                                 <div className="col-lg-4">
                                   <ul className="v-level-2">
                                     <li>
-                                      <a href="shop-v2-sub-category.html">Outwear &amp; Jackets
-                                      </a>
+                                      <Link to="/category/subcategory">Outwear &amp; Jackets
+                                      </Link>
                                       <ul>
                                         <li>
-                                          <a href="shop-v3-sub-sub-category.html">Blazers</a>
+                                        <Link to="/category/subcategory/subcategory">Blazers</Link>
                                         </li>
                                         <li>
-                                          <a href="shop-v3-sub-sub-category.html">Basics Jackets
-                                          </a>
+                                        <Link to="/category/subcategory/subcategory">Basics Jackets
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="shop-v3-sub-sub-category.html">Trench</a>
+                                        <Link to="/category/subcategory/subcategory">Trench</Link>
                                         </li>
                                         <li>
-                                          <a href="shop-v3-sub-sub-category.html">Leather &amp; Suede
-                                          </a>
+                                        <Link to="/category/subcategory/subcategory">Leather &amp; Suede
+                                          </Link>
                                         </li>
                                       </ul>
                                     </li>
@@ -302,7 +303,7 @@ function BottomHeader(props) {
                                 <div className="col-lg-4">
                                   <ul className="v-level-2">
                                     <li>
-                                      <a href="shop-v2-sub-category.html">Accessories</a>
+                                      <Link to="/category/subcategory">Accessories</Link>
                                       <ul>
                                         <li>
                                           <a href="shop-v3-sub-sub-category.html">Sunglasses</a>
@@ -325,11 +326,11 @@ function BottomHeader(props) {
                             </div>
                           </li>
                           <li className="js-backdrop">
-                            <a href="shop-v1-root-category.html">
+                          <Link to="/category-name">
                               <i className="ion ion-md-rocket" />
                               Toys Hobbies &amp; Robots
                               <i className="ion ion-ios-arrow-forward" />
-                            </a>
+                            </Link>
                             <button className="v-button ion ion-md-add" />
                             <div className="v-drop-right" style={{width: '700px'}}>
                               <div className="row">
@@ -415,40 +416,40 @@ function BottomHeader(props) {
                             </div>
                           </li>
                           <li>
-                            <a href="shop-v1-root-category.html">
+                          <Link to="/category-name">
                               <i className="ion ion-md-phone-portrait" />
                               Mobiles &amp; Tablets
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="shop-v1-root-category.html">
+                            <Link to="/category-name">
                               <i className="ion ion-md-tv" />
                               Consumer Electronics
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="shop-v1-root-category.html">
+                            <Link to="/category-name">
                               <i className="ion ion-ios-book" />
                               Books &amp; Audible
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="shop-v1-root-category.html">
+                            <Link to="/category-name">
                               <i className="ion ion-md-heart" />
                               Beauty &amp; Health
-                            </a>
+                            </Link>
                           </li>
                           <li className="v-none" style={{display: 'none'}}>
-                            <a href="shop-v1-root-category.html">
+                            <Link to="/category-name">
                               <i className="ion ion-md-easel" />
                               Furniture Home &amp; Office
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a className="v-more">
+                            <Link to="/category-name">
                               <i className="ion ion-md-add" />
                               <span>View More</span>
-                            </a>
+                            </Link>
                           </li>
                         </ul>
                       </div>

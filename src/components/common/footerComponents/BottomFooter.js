@@ -43,8 +43,8 @@ function BottomFooter() {
                   </li>
                 </ul>
               </div>
-              <p className="copyright-text">Copyright © 2018
-                <a href="home.html">Groover</a> All Right Reserved</p>
+              <p className="copyright-text">Copyright © 2021
+                <a href="home.html">Rroover</a> All Right Reserved</p>
             </div>
         </Fragment>
     )

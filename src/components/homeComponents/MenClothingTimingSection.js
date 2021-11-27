@@ -1,4 +1,5 @@
 import React, {Fragment} from 'react'
+import {Link} from 'react-router-dom'
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
@@ -76,6 +77,7 @@ function MenClothingTimingSection() {
               >
                 
                 <div className="item">
+                <Link to='/singleProduct/productName'>
                   <div className="image-container">
                     <a className="item-img-wrapper-link" href="single-product.html">
                       <img className="img-fluid" src="images/product/product@3x.jpg" alt="Product" />
@@ -122,9 +124,11 @@ function MenClothingTimingSection() {
                   <div className="tag hot">
                     <span>HOT</span>
                   </div>
+                  </Link>
                 </div>
 
                 <div className="item">
+                <Link to='/singleProduct/productName'>
                   <div className="image-container">
                     <a className="item-img-wrapper-link" href="single-product.html">
                       <img className="img-fluid" src="images/product/product@3x.jpg" alt="Product" />
@@ -171,9 +175,11 @@ function MenClothingTimingSection() {
                   <div className="tag hot">
                     <span>HOT</span>
                   </div>
+                  </Link>
                 </div>
 
                 <div className="item">
+                <Link to='/singleProduct/productName'>
                   <div className="image-container">
                     <a className="item-img-wrapper-link" href="single-product.html">
                       <img className="img-fluid" src="images/product/product@3x.jpg" alt="Product" />
@@ -220,9 +226,11 @@ function MenClothingTimingSection() {
                   <div className="tag hot">
                     <span>HOT</span>
                   </div>
+                  </Link>
                 </div>
 
                 <div className="item">
+                <Link to='/singleProduct/productName'>
                   <div className="image-container">
                     <a className="item-img-wrapper-link" href="single-product.html">
                       <img className="img-fluid" src="images/product/product@3x.jpg" alt="Product" />
@@ -269,6 +277,7 @@ function MenClothingTimingSection() {
                   <div className="tag hot">
                     <span>HOT</span>
                   </div>
+                  </Link>
                 </div>
               </OwlCarousel>
 

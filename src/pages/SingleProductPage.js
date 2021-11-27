@@ -1,4 +1,4 @@
-import React,{Fragment} from 'react'
+import React,{Fragment, useEffect} from 'react'
 import Header from '../components/common/Header'
 import Footer from '../components/common/Footer'
 import DummySelectBox from '../components/common/responsiveAndOtherComponents/DummySelectBox'
@@ -9,6 +9,9 @@ import PageIntroductionWrapper from '../components/common/PageIntroductionWrappe
 import SingleProduct from '../components/SingleProduct'
 
 function SingleProductPage() {
+    useEffect(()=>{
+        window.scroll(0,0)
+    })
     return (
         <Fragment>
             
@@ -17,7 +20,11 @@ function SingleProductPage() {
             {/* Header /- */}
 
             {/* Page Introduction Wrapper */}
-            <PageIntroductionWrapper/>
+            <PageIntroductionWrapper
+                title="Single Page Product Details"
+                linkOne="Home"
+                linkTwo="Detail"
+            />
             {/* Page Introduction Wrapper /- */}
 
             {/* Single-Product-Full-Width-Page */}
@@ -28,11 +35,7 @@ function SingleProductPage() {
             <DummySelectBox/>
             {/* Dummy Selectbox /- */}
 
-             {/* Responsive-Search */}
-            <ResponsiveSearch/>
-            {/* Responsive-Search /- */}
-
-             {/* Newsletter-Modal */}
+            {/* Newsletter-Modal */}
             <NewsLetterModal/>
             {/* Newsletter-Modal /- */}
 

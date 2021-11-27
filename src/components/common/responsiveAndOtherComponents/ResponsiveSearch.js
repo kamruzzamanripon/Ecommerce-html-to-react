@@ -1,6 +1,10 @@
-import React,{Fragment} from 'react'
+import React,{Fragment, useEffect} from 'react'
+import $ from 'jquery'
 
 function ResponsiveSearch() {
+    
+
+
     return (
         <Fragment>
             <div className="responsive-search-wrapper">

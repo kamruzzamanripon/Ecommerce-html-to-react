@@ -62,7 +62,7 @@ function MenClothing() {
                       {/* <div className="products-slider owl-carousel" data-item={4}> */}
                        
                           <div className="item">
-                        <Link to='/singleProduct/productName'>
+                          <Link to='/singleProduct/productName'>
                             <div className="image-container">
                               <a className="item-img-wrapper-link" href="#">
                                 <img className="img-fluid" src="images/product/product@3x.jpg" alt="Product" />
@@ -212,6 +212,7 @@ function MenClothing() {
                         </div>
 
                         <div className="item">
+                        <Link to='/singleProduct/productName'>
                           <div className="image-container">
                             <a className="item-img-wrapper-link" href="single-product.html">
                               <img className="img-fluid" src="images/product/product@3x.jpg" alt="Product" />
@@ -259,9 +260,11 @@ function MenClothing() {
                           <div className="tag new">
                             <span>NEW</span>
                           </div>
+                        </Link>
                         </div>
 
                         <div className="item">
+                        <Link to='/singleProduct/productName'>
                           <div className="image-container">
                             <a className="item-img-wrapper-link" href="single-product.html">
                               <img className="img-fluid" src="images/product/product@3x.jpg" alt="Product" />
@@ -309,9 +312,11 @@ function MenClothing() {
                           <div className="tag sale">
                             <span>SALE</span>
                           </div>
+                          </Link>
                         </div>
 
                         <div className="item">
+                        <Link to='/singleProduct/productName'>
                           <div className="image-container">
                             <a className="item-img-wrapper-link" href="single-product.html">
                               <img className="img-fluid" src="images/product/product@3x.jpg" alt="Product" />
@@ -356,9 +361,11 @@ function MenClothing() {
                               </div>
                             </div>
                           </div>
+                          </Link>
                         </div>
 
                         <div className="item">
+                        <Link to='/singleProduct/productName'>
                           <div className="image-container">
                             <a className="item-img-wrapper-link" href="single-product.html">
                               <img className="img-fluid" src="images/product/product@3x.jpg" alt="Product" />
@@ -404,9 +411,11 @@ function MenClothing() {
                               </div>
                             </div>
                           </div>
+                          </Link>
                         </div>
 
                         <div className="item">
+                        <Link to='/singleProduct/productName'>
                           <div className="image-container">
                             <a className="item-img-wrapper-link" href="single-product.html">
                               <img className="img-fluid" src="images/product/product@3x.jpg" alt="Product" />
@@ -455,6 +464,7 @@ function MenClothing() {
                           <div className="tag discount">
                             <span>-15%</span>
                           </div>
+                          </Link>
                         </div>
                         </OwlCarousel>
                       {/* </div> */}
@@ -483,6 +493,7 @@ function MenClothing() {
                       >
                         
                         <div className="item">
+                        <Link to='/singleProduct/productName'>
                           <div className="image-container">
                             <a className="item-img-wrapper-link" href="single-product.html">
                               <img className="img-fluid" src="images/product/product@3x.jpg" alt="Product" />
@@ -530,9 +541,11 @@ function MenClothing() {
                           <div className="tag sale">
                             <span>SALE</span>
                           </div>
+                          </Link>
                         </div>
                         
                         <div className="item">
+                        <Link to='/singleProduct/productName'>
                           <div className="image-container">
                             <a className="item-img-wrapper-link" href="single-product.html">
                               <img className="img-fluid" src="images/product/product@3x.jpg" alt="Product" />
@@ -577,9 +590,11 @@ function MenClothing() {
                               </div>
                             </div>
                           </div>
+                          </Link>
                         </div>
                         
                         <div className="item">
+                        <Link to='/singleProduct/productName'>
                           <div className="image-container">
                             <a className="item-img-wrapper-link" href="single-product.html">
                               <img className="img-fluid" src="images/product/product@3x.jpg" alt="Product" />
@@ -624,9 +639,11 @@ function MenClothing() {
                               </div>
                             </div>
                           </div>
+                          </Link>
                         </div>
                         
                         <div className="item">
+                        <Link to='/singleProduct/productName'>
                           <div className="image-container">
                             <a className="item-img-wrapper-link" href="single-product.html">
                               <img className="img-fluid" src="images/product/product@3x.jpg" alt="Product" />
@@ -675,6 +692,7 @@ function MenClothing() {
                           <div className="tag discount">
                             <span>-15%</span>
                           </div>
+                          </Link>
                         </div>
 
                       </OwlCarousel>

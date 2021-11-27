@@ -30,22 +30,22 @@ $(function () {
     });
 
     // Bind this plugin on Product `Detail` page
-    $('#zoom-pro').elevateZoom({
-        gallery: 'gallery',
-        galleryActiveClass: 'active',
-        borderSize: 1,
-        zoomWindowWidth: 540,
-        zoomWindowHeight: 540,
-        zoomWindowOffetx: 10,
-        borderColour: '#e9e9e9',
-    });
+    // $('#zoom-pro').elevateZoom({
+    //     gallery: 'gallery',
+    //     galleryActiveClass: 'active',
+    //     borderSize: 1,
+    //     zoomWindowWidth: 540,
+    //     zoomWindowHeight: 540,
+    //     zoomWindowOffetx: 10,
+    //     borderColour: '#e9e9e9',
+    // });
 
     // For `modals` we don't want to enable `zoom window`.
-    $('#zoom-pro-quick-view').elevateZoom({
-        gallery: 'gallery-quick-view',
-        galleryActiveClass: 'active',
-        zoomEnabled: false, // false disables zoomwindow from showing
-    });
+    // $('#zoom-pro-quick-view').elevateZoom({
+    //     gallery: 'gallery-quick-view',
+    //     galleryActiveClass: 'active',
+    //     zoomEnabled: false, // false disables zoomwindow from showing
+    // });
 
     // Bind resize select on mid header
     $('#select-category', document).ResizeSelect();
@@ -109,15 +109,15 @@ $(function () {
     /**
      * Attach Click Event on Search Button
      */
-    const attachClickOnResponsiveSearchForm = function () {
-        $('#responsive-search').on('click', function () {
-            $('.responsive-search-wrapper').stop(true, true).fadeIn();
-        });
+    // const attachClickOnResponsiveSearchForm = function () {
+    //     $('#responsive-search').on('click', function () {
+    //         $('.responsive-search-wrapper').stop(true, true).fadeIn();
+    //     });
 
-        $('#responsive-search-close-button').on('click', function () {
-            $('.responsive-search-wrapper').stop(true, true).fadeOut();
-        });
-    };
+    //     $('#responsive-search-close-button').on('click', function () {
+    //         $('.responsive-search-wrapper').stop(true, true).fadeOut();
+    //     });
+    // };
 
     /**
      * Attach Click Event on Mini Cart Anchor
@@ -182,48 +182,48 @@ $(function () {
      * Backdrop only works on landscape mode this function will Check
      * if user wants to show or hide the backdrop
      */
-    const mainBackDropManipulator = function () {
-        if (settings.bodyBackDropOnScenes) {
-            if (mode === 'landscape' && !listItembackDropFlag) {
-                // If body has length equal to zero then it means our element is
-                // not added, if it did'nt have length equal to zero then it
-                // means our element is added.
-                if ($('#app').find('.body-backdrop').length === 0) {
-                    $('#app').append('<div class="body-backdrop"></div>\n');
-                    // Assign Back Drop
-                    $backDrop = $('div.body-backdrop');
-                    // Input type Text
-                    $searchFormElement = $('#search-landscape');
-                    $searchFormWrapper = $('.form-searchbox');
-                    $searchFormElement.focus(function () {
-                        // I Hope elements are appropriate assign
-                        $searchFormWrapper.css({'position': 'relative', 'z-index': settings.zIndexNumber});
-                        // Show Back Drop
-                        showBackDrop($backDrop);
-                    }).blur(function () {
-                        // I Hope elements are appropriate assign
-                        $searchFormWrapper.css({'position': '', 'z-index': ''});
-                        // Remove Back Drop
-                        removeBackDrop($backDrop);
-                    });
-                    // First Time invocation
-                    // HoverOn list items that have class `js-backdrop`
-                    hoverOnListItems();
-                    // Flag is set to true
-                    listItembackDropFlag = true;
-                }
-            }
+    // const mainBackDropManipulator = function () {
+    //     if (settings.bodyBackDropOnScenes) {
+    //         if (mode === 'landscape' && !listItembackDropFlag) {
+    //             // If body has length equal to zero then it means our element is
+    //             // not added, if it did'nt have length equal to zero then it
+    //             // means our element is added.
+    //             if ($('#app').find('.body-backdrop').length === 0) {
+    //                 $('#app').append('<div class="body-backdrop"></div>\n');
+    //                 // Assign Back Drop
+    //                 $backDrop = $('div.body-backdrop');
+    //                 // Input type Text
+    //                 $searchFormElement = $('#search-landscape');
+    //                 $searchFormWrapper = $('.form-searchbox');
+    //                 $searchFormElement.focus(function () {
+    //                     // I Hope elements are appropriate assign
+    //                     $searchFormWrapper.css({'position': 'relative', 'z-index': settings.zIndexNumber});
+    //                     // Show Back Drop
+    //                     showBackDrop($backDrop);
+    //                 }).blur(function () {
+    //                     // I Hope elements are appropriate assign
+    //                     $searchFormWrapper.css({'position': '', 'z-index': ''});
+    //                     // Remove Back Drop
+    //                     removeBackDrop($backDrop);
+    //                 });
+    //                 // First Time invocation
+    //                 // HoverOn list items that have class `js-backdrop`
+    //                 hoverOnListItems();
+    //                 // Flag is set to true
+    //                 listItembackDropFlag = true;
+    //             }
+    //         }
 
-            if (mode === 'landscape' && listItembackDropFlag) {
-                // It means hover is On
-                hoverOnListItems();
-            } else if (mode === 'portrait' && listItembackDropFlag) {
-                // Hover is Off
-                hoverOffListItems();
-            }
-        }
+    //         if (mode === 'landscape' && listItembackDropFlag) {
+    //             // It means hover is On
+    //             hoverOnListItems();
+    //         } else if (mode === 'portrait' && listItembackDropFlag) {
+    //             // Hover is Off
+    //             hoverOffListItems();
+    //         }
+    //     }
 
-    };
+    // };
     /**
      * Manually Restart Pace-js when we change any tab.
      */
@@ -320,7 +320,7 @@ $(function () {
      */
     $(function () {
         //  Attach Click Event on Search Button
-        attachClickOnResponsiveSearchForm();
+        //attachClickOnResponsiveSearchForm();
         //  Attach Click Event on Mini Cart Anchor
         //attachClickOnMiniCart();
         // Attach Click Event on VMenu
@@ -562,86 +562,86 @@ $(function () {
 (function ($, window, document) {
     'use strict';
     //  Variables
-    let $ratingField = $('#your-rating-value');
-    let $starWidth = $('#your-stars');
-    let $starComment = $('#star-comment');
+    // let $ratingField = $('#your-rating-value');
+    // let $starWidth = $('#your-stars');
+    // let $starComment = $('#star-comment');
 
 
 
     /**
      * Rating Stars Control
      */
-    const ratingStarsControl = function () {
-        let oneStarWidth = 15; // 15 * 5 = 75
-        let newStarWidth;
-        let ratingthresholdNumber = 5;
-        let comment;
-        let currentVal;
-        // On Every key type
-        $ratingField.on('keyup',function () {
-            // Reset Star Width
-            $starWidth.css('width',0);
-            // Reset Comment
-            $starComment.text('');
-            // Always remember when when you enter any number and immediately enter some strings then parseFloat
-            // function will truncate those strings and just only parse number so that's why i'm using this
-            // check isNumeric
-            if ($.isNumeric($ratingField.val())) {
-                currentVal = parseFloat($ratingField.val());
-            } else {
-                currentVal = NaN;
-            }
-            /*
-             * Format values
-             * In JS if variable is not convert to number then by default variable is NaN.
-             * We known JS has Truthy & Falsey values.
-             * By default NaN (e.g. the result of 1/0) is false so its convert to true and expression
-             * becomes true.
-             */
-            if ( !currentVal || currentVal === '' || currentVal === 'NaN' || currentVal === 0) {
-                // if value is NaN
-                currentVal = 0;
-                $starWidth.css('width',0);
-                $starComment.text('');
-            } else {
-                if ( (currentVal >=1) && (currentVal <= ratingthresholdNumber)) {
+    // const ratingStarsControl = function () {
+    //     let oneStarWidth = 15; // 15 * 5 = 75
+    //     let newStarWidth;
+    //     let ratingthresholdNumber = 5;
+    //     let comment;
+    //     let currentVal;
+    //     // On Every key type
+    //     $ratingField.on('keyup',function () {
+    //         // Reset Star Width
+    //         $starWidth.css('width',0);
+    //         // Reset Comment
+    //         $starComment.text('');
+    //         // Always remember when when you enter any number and immediately enter some strings then parseFloat
+    //         // function will truncate those strings and just only parse number so that's why i'm using this
+    //         // check isNumeric
+    //         if ($.isNumeric($ratingField.val())) {
+    //             currentVal = parseFloat($ratingField.val());
+    //         } else {
+    //             currentVal = NaN;
+    //         }
+    //         /*
+    //          * Format values
+    //          * In JS if variable is not convert to number then by default variable is NaN.
+    //          * We known JS has Truthy & Falsey values.
+    //          * By default NaN (e.g. the result of 1/0) is false so its convert to true and expression
+    //          * becomes true.
+    //          */
+    //         if ( !currentVal || currentVal === '' || currentVal === 'NaN' || currentVal === 0) {
+    //             // if value is NaN
+    //             currentVal = 0;
+    //             $starWidth.css('width',0);
+    //             $starComment.text('');
+    //         } else {
+    //             if ( (currentVal >=1) && (currentVal <= ratingthresholdNumber)) {
 
-                    if (currentVal === 1 ) {
-                        comment = 'I hate it.';
-                    }
-                    else if(currentVal === 2 ) {
-                        comment = "I don't like it.";
-                    }
-                    else if(currentVal === 3 ) {
-                        comment = "It's OK.";
-                    }
-                    else if(currentVal === 4 ) {
-                        comment = "I like it.";
-                    }
-                    else if(currentVal === 5 ) {
-                        comment = "It's Perfect.";
-                    }
-                    // Precise Float value to only one decimal. example: 2.454544 to 2.5
-                    currentVal = currentVal.toFixed(1);
-                    // Manipulate Stars Width
-                    newStarWidth = oneStarWidth * currentVal;
-                    // Remove decimals from a variable, Convert float value to downward
-                    newStarWidth = Math.floor(newStarWidth);
-                    // Update Star Width
-                    $starWidth.css('width',newStarWidth);
-                    // Add Comment
-                    $starComment.text(comment);
-                }
-            }
-        });
+    //                 if (currentVal === 1 ) {
+    //                     comment = 'I hate it.';
+    //                 }
+    //                 else if(currentVal === 2 ) {
+    //                     comment = "I don't like it.";
+    //                 }
+    //                 else if(currentVal === 3 ) {
+    //                     comment = "It's OK.";
+    //                 }
+    //                 else if(currentVal === 4 ) {
+    //                     comment = "I like it.";
+    //                 }
+    //                 else if(currentVal === 5 ) {
+    //                     comment = "It's Perfect.";
+    //                 }
+    //                 // Precise Float value to only one decimal. example: 2.454544 to 2.5
+    //                 currentVal = currentVal.toFixed(1);
+    //                 // Manipulate Stars Width
+    //                 newStarWidth = oneStarWidth * currentVal;
+    //                 // Remove decimals from a variable, Convert float value to downward
+    //                 newStarWidth = Math.floor(newStarWidth);
+    //                 // Update Star Width
+    //                 $starWidth.css('width',newStarWidth);
+    //                 // Add Comment
+    //                 $starComment.text(comment);
+    //             }
+    //         }
+    //     });
 
-    };
+    // };
 
 
 
     $(function () {
         // Rating Stars Control
-        ratingStarsControl();
+        //ratingStarsControl();
     });
 
 })(jQuery, window, document);

@@ -1,28 +1,46 @@
-import React,{Fragment} from 'react'
+import React,{Fragment, useState} from 'react'
+import ReactImageZoom from 'react-image-zoom';
 
 function ProductZoomArea() {
+    const [previewImage, setPreviewImage] = useState("images/product/product@4x.jpg")
+    
+
+    const bigImageConvert = (event)=>{
+      let imgSrc= event.target.getAttribute('src')
+      setPreviewImage(imgSrc)
+      
+    }
     return (
         <Fragment>
             <div className="zoom-area">
-                  <img id="zoom-pro" className="img-fluid" src="images/product/product@4x.jpg" data-zoom-image="images/product/product@4x.jpg" alt="Zoom Image" />
+                <ReactImageZoom
+                  width= {480}
+                  height= {400}
+                  zoomWidth={500}
+                  img={previewImage}
+                  
+                />
+                  {/* <img id="zoom-pro" className="img-fluid" src="images/product/product@4x.jpg"  alt="Zoom Image" /> */}
+                  
                   <div id="gallery" className="u-s-m-t-10">
-                    <a className="active" data-image="images/product/product@4x.jpg" data-zoom-image="images/product/product@4x.jpg">
-                      <img src="images/product/product@2x.jpg" alt="Product" />
+                    
+                    <a onClick={bigImageConvert} className="active" >
+                      <img src="images/product/product@4x.jpg" alt="Product" />
                     </a>
-                    <a data-image="images/product/product@4x.jpg" data-zoom-image="images/product/product@4x.jpg">
-                      <img src="images/product/product@2x.jpg" alt="Product" />
+                    <a  onClick={bigImageConvert} >
+                      <img  src="images/product/product@3x.jpg" alt="Product" />
                     </a>
-                    <a data-image="images/product/product@4x.jpg" data-zoom-image="images/product/product@4x.jpg">
-                      <img src="images/product/product@2x.jpg" alt="Product" />
+                    <a onClick={bigImageConvert} >
+                      <img  src="images/product/product@4x.jpg" alt="Product" />
                     </a>
-                    <a data-image="images/product/product@4x.jpg" data-zoom-image="images/product/product@4x.jpg">
-                      <img src="images/product/product@2x.jpg" alt="Product" />
+                    <a onClick={bigImageConvert} >
+                      <img  src="images/product/product@3x.jpg" alt="Product" />
                     </a>
-                    <a data-image="images/product/product@4x.jpg" data-zoom-image="images/product/product@4x.jpg">
-                      <img src="images/product/product@2x.jpg" alt="Product" />
+                    <a onClick={bigImageConvert} >
+                      <img  src="images/product/product@4x.jpg" alt="Product" />
                     </a>
-                    <a data-image="images/product/product@4x.jpg" data-zoom-image="images/product/product@4x.jpg">
-                      <img src="images/product/product@2x.jpg" alt="Product" />
+                    <a onClick={bigImageConvert}>
+                      <img  src="images/product/product@3x.jpg" alt="Product" />
                     </a>
                   </div>
                 </div>

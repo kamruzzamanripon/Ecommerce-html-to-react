@@ -16,11 +16,7 @@ function Header(props) {
               {/* Mid-Header */}
               <MidHeader />
               {/* Mid-Header /- */}
-              
-              {/* Mini Cart */}
-              {/* <MiniCart/> */}
-              {/* Mini Cart /- */}
-              
+                                      
               {/* Bottom-Header */}
               <BottomHeader 
                 allCategoryMenu={props.allCategoryMenu}

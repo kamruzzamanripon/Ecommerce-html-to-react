@@ -9,21 +9,7 @@ function MiniCart(props) {
     return (
         <Fragment>
 
-            {/* Responsive-Buttons */}
-          <div className="fixed-responsive-container">
-            <div className="fixed-responsive-wrapper">
-              <button type="button" className="button fas fa-search" id="responsive-search" />
-            </div>
-            <div className="fixed-responsive-wrapper">
-              <a href="wishlist.html">
-                <i className="far fa-heart" />
-                <span className="fixed-item-counter">4</span>
-              </a>
-            </div>
-          </div>
-          {/* Responsive-Buttons /- */}
-          
-            <div className={ props.miniCartTigger===true ? 'mini-cart-open mini-cart-wrapper' : 'mini-cart-wrapper' } >
+           <div className={ props.miniCartTigger===true ? 'mini-cart-open mini-cart-wrapper' : 'mini-cart-wrapper' } >
             <div className="mini-cart">
               <div className="mini-cart-header">
                 YOUR CART

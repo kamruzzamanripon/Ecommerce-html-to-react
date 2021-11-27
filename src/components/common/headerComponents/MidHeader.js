@@ -1,6 +1,7 @@
-import React, {Fragment, useState} from 'react'
+import React, {Fragment, useState, useEffect} from 'react'
 import {Link} from 'react-router-dom'
 import MiniCart from './MiniCart'
+import $ from 'jquery'
 
 function MidHeader() {
   const [miniCartTigger, setMiniCartTigger] = useState(false)
@@ -9,6 +10,8 @@ function MidHeader() {
   const miniCartTiggerToggle =()=>{
     miniCartTigger === false ? setMiniCartTigger(true) : setMiniCartTigger(false)
   }
+
+  
     return (
         <Fragment>
             <div className="full-layer-mid-header">
@@ -29,23 +32,23 @@ function MidHeader() {
                       <div className="select-box-wrapper select-hide">
                         <label className="sr-only" htmlFor="select-category">Choose category for search</label>
                         <select className="select-box" id="select-category">
-                          <option selected="selected" value>
+                          <option value="1">
                             All
                           </option>
-                          <option value>Men's Clothing</option>
-                          <option value>Women's Clothing
+                          <option value="1">Men's Clothing</option>
+                          <option value="2">Women's Clothing
                           </option>
-                          <option value>Toys Hobbies &amp; Robots
+                          <option value="3">Toys Hobbies &amp; Robots
                           </option>
-                          <option value>Mobiles &amp; Tablets
+                          <option value="4">Mobiles &amp; Tablets
                           </option>
-                          <option value>Consumer Electronics
+                          <option value="5">Consumer Electronics
                           </option>
-                          <option value>Books &amp; Audible
+                          <option value="6">Books &amp; Audible
                           </option>
-                          <option value>Beauty &amp; Health
+                          <option value="7">Beauty &amp; Health
                           </option>
-                          <option value>Furniture Home &amp; Office
+                          <option value="8">Furniture Home &amp; Office
                           </option>
                         </select>
                       </div>
@@ -79,6 +82,20 @@ function MidHeader() {
               </div>
             </div>
           </div>
+
+           {/* Responsive-Buttons */}
+           <div className="fixed-responsive-container">
+            <div className="fixed-responsive-wrapper">
+              <button type="button" className="button fas fa-search" id="responsive-search"  />
+            </div>
+            <div className="fixed-responsive-wrapper">
+              <a href="wishlist.html">
+                <i className="far fa-heart" />
+                <span className="fixed-item-counter">4</span>
+              </a>
+            </div>
+          </div>
+          {/* Responsive-Buttons /- */}
 
            {/* Mini Cart */}
            <MiniCart 

@@ -26,7 +26,7 @@ function MainSlider() {
             >
                 <div className="bg-image one">
                 <div className="slide-content slide-animation">
-                    <h1>Casual Clothing</h1>
+                    <h1>Nashwan Casual Clothing</h1>
                     <h2>lifestyle / clothing / hype</h2>
                 </div>
                 </div>
