@@ -459,18 +459,18 @@ function BottomHeader(props) {
                 <div className="col-lg-9">
                   <ul className="bottom-nav g-nav u-d-none-lg">
                     <li>
-                      <a href="custom-deal-page.html">New Arrivals
+                      <Link to="/new-arrivals">New Arrivals
                         <span className="superscript-label-new">NEW</span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="custom-deal-page.html">Exclusive Deals
+                      <Link to="/exclusive-deals">Exclusive Deals
                         <span className="superscript-label-hot">HOT</span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="custom-deal-page.html">Flash Deals
-                      </a>
+                      <Link to="/flash-deals">Flash Deals
+                      </Link>
                     </li>
                     <li className="mega-position">
                       <a>Pages
@@ -583,9 +583,9 @@ function BottomHeader(props) {
                       </div>
                     </li>
                     <li>
-                      <a href="custom-deal-page.html">Super Sale
+                      <Link to="/super-sale">Super Sale
                         <span className="superscript-label-discount">-15%</span>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>

@@ -1,4 +1,4 @@
-import React,{Fragment} from 'react'
+import React,{Fragment, useEffect} from 'react'
 
 import Header from '../components/common/Header'
 import PageIntroductionWrapper from '../components/common/PageIntroductionWrapper'
@@ -8,6 +8,11 @@ import SubCategoryProduct from '../components/SubCategoryProduct'
 import Footer from '../components/common/Footer'
 
 function SubCategoryPage() {
+
+    useEffect(()=>{
+        window.scroll(0,0)
+    })
+
     return (
         <Fragment>
              {/* Header */}

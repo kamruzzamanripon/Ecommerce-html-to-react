@@ -1,38 +1,39 @@
 import React,{Fragment, useEffect} from 'react'
+
 import Header from '../components/common/Header'
-import Footer from '../components/common/Footer'
 import PageIntroductionWrapper from '../components/common/PageIntroductionWrapper'
-import NotFound from '../components/NotFound'
+import TermsAndConditions from '../components/TermsAndConditions'
+import Footer from '../components/common/Footer'
 
-
-function NotFoundPage() {
+function TermsAndConditionsPage() {
 
     useEffect(()=>{
         window.scroll(0,0)
     })
+
     return (
         <Fragment>
-            
-            {/* Header */}
-            <Header allCategoryMenu='false'/>
+             {/* Header */}
+             <Header allCategoryMenu='false'/>
             {/* Header /- */}
 
             {/* Page Introduction Wrapper */}
             <PageIntroductionWrapper
-                title="Sorry To Say"
+                title="Terms and Condition"
                 linkOne="Home"
-                linkTwo="404"
+                linkTwo="Terms & Conditions"
             />
             {/* Page Introduction Wrapper /- */}
 
-            <NotFound/>
 
+            <TermsAndConditions/>
+
+                  
             {/* Footer */}
             <Footer/>
             {/* Footer /- */}
-
         </Fragment>
     )
 }
 
-export default NotFoundPage
+export default TermsAndConditionsPage

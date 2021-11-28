@@ -1,4 +1,5 @@
 import React,{Fragment} from 'react'
+import {Link} from 'react-router-dom'
 
 function MidFooter() {
     return (
@@ -10,13 +11,13 @@ function MidFooter() {
                     <h6>CUSTOMER SERVICE</h6>
                     <ul>
                       <li>
-                        <a href="faq.html">FAQs</a>
+                        <Link to="/faq">FAQs</Link>
                       </li>
                       <li>
-                        <a href="track-order.html">Track Order</a>
+                        <Link to="/track-order">Track Order</Link>
                       </li>
                       <li>
-                        <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+                        <Link to="/terms-conditions">Terms &amp; Conditions</Link>
                       </li>
                     </ul>
                   </div>
@@ -26,13 +27,13 @@ function MidFooter() {
                     <h6>COMPANY</h6>
                     <ul>
                       <li>
-                        <a href="home.html">Home</a>
+                        <Link to="/">Home</Link>
                       </li>
                       <li>
-                        <a href="about.html">About</a>
+                        <Link to="/about">About</Link>
                       </li>
                       <li>
-                        <a href="contact.html">Contact</a>
+                        <Link to="/contact">Contact</Link>
                       </li>
                     </ul>
                   </div>
@@ -42,13 +43,13 @@ function MidFooter() {
                     <h6>INFORMATION</h6>
                     <ul>
                       <li>
-                        <a href="store-directory.html">Categories Directory</a>
+                        <Link to="/directory">Categories Directory</Link>
                       </li>
                       <li>
-                        <a href="wishlist.html">My Wishlist</a>
+                        <Link to="/wishlist">My Wishlist</Link>
                       </li>
                       <li>
-                        <a href="cart.html">My Cart</a>
+                        <Link to="/cart">My Cart</Link>
                       </li>
                     </ul>
                   </div>

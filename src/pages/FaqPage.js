@@ -1,38 +1,39 @@
 import React,{Fragment, useEffect} from 'react'
+
 import Header from '../components/common/Header'
-import Footer from '../components/common/Footer'
 import PageIntroductionWrapper from '../components/common/PageIntroductionWrapper'
-import NotFound from '../components/NotFound'
+import Faq from '../components/Faq'
+import Footer from '../components/common/Footer'
 
-
-function NotFoundPage() {
+function FaqPage() {
 
     useEffect(()=>{
         window.scroll(0,0)
     })
+    
     return (
         <Fragment>
-            
-            {/* Header */}
-            <Header allCategoryMenu='false'/>
+             {/* Header */}
+             <Header allCategoryMenu='false'/>
             {/* Header /- */}
 
             {/* Page Introduction Wrapper */}
             <PageIntroductionWrapper
-                title="Sorry To Say"
+                title="Directory"
                 linkOne="Home"
-                linkTwo="404"
+                linkTwo="Drectory"
             />
             {/* Page Introduction Wrapper /- */}
 
-            <NotFound/>
 
+            <Faq/>
+
+                  
             {/* Footer */}
             <Footer/>
             {/* Footer /- */}
-
         </Fragment>
     )
 }
 
-export default NotFoundPage
+export default FaqPage

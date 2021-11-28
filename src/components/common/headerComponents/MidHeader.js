@@ -60,14 +60,14 @@ function MidHeader() {
                   <nav>
                     <ul className="mid-nav g-nav">
                       <li className="u-d-none-lg">
-                        <a href="home.html">
+                        <Link to="/">
                           <i className="ion ion-md-home u-c-brand" />
-                        </a>
+                        </Link>
                       </li>
                       <li className="u-d-none-lg">
-                        <a href="wishlist.html">
+                        <Link to="/wishlist">
                           <i className="far fa-heart" />
-                        </a>
+                        </Link>
                       </li>
                       <li>
                         <a id="mini-cart-trigger" onClick={miniCartTiggerToggle}>

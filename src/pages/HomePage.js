@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react'
+import React, {Fragment, useEffect} from 'react'
 import Footer from '../components/common/Footer'
 import Header from '../components/common/Header'
 import BannerImageViewMore from '../components/homeComponents/BannerImageViewMore'
@@ -20,6 +20,11 @@ import NewsLetterModal from '../components/common/responsiveAndOtherComponents/N
 import QuickViewModal from '../components/common/responsiveAndOtherComponents/QuickViewModal'
 
 function HomePage() {
+
+    useEffect(()=>{
+        window.scroll(0,0)
+    })
+
     return (
         <Fragment>
             {/* app */}

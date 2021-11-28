@@ -1,38 +1,42 @@
 import React,{Fragment, useEffect} from 'react'
+
 import Header from '../components/common/Header'
-import Footer from '../components/common/Footer'
 import PageIntroductionWrapper from '../components/common/PageIntroductionWrapper'
-import NotFound from '../components/NotFound'
+import CustomDeal from '../components/CustomDeal'
+import Footer from '../components/common/Footer'
 
-
-function NotFoundPage() {
+function SuperSalePage() {
 
     useEffect(()=>{
         window.scroll(0,0)
     })
+    
     return (
         <Fragment>
-            
-            {/* Header */}
-            <Header allCategoryMenu='false'/>
+             {/* Header */}
+             <Header allCategoryMenu='false'/>
             {/* Header /- */}
 
             {/* Page Introduction Wrapper */}
             <PageIntroductionWrapper
-                title="Sorry To Say"
+                title="Super Sale"
                 linkOne="Home"
-                linkTwo="404"
+                linkTwo="New Arrivals"
             />
             {/* Page Introduction Wrapper /- */}
 
-            <NotFound/>
 
+            <CustomDeal
+                title="Super Sale Products"
+                item='11 Items'
+            />
+
+                  
             {/* Footer */}
             <Footer/>
             {/* Footer /- */}
-
         </Fragment>
     )
 }
 
-export default NotFoundPage
+export default SuperSalePage

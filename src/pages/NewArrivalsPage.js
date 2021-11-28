@@ -1,38 +1,42 @@
 import React,{Fragment, useEffect} from 'react'
+
 import Header from '../components/common/Header'
-import Footer from '../components/common/Footer'
 import PageIntroductionWrapper from '../components/common/PageIntroductionWrapper'
-import NotFound from '../components/NotFound'
+import CustomDeal from '../components/CustomDeal'
+import Footer from '../components/common/Footer'
 
-
-function NotFoundPage() {
+function NewArrivalsPage() {
 
     useEffect(()=>{
         window.scroll(0,0)
     })
+    
     return (
         <Fragment>
-            
-            {/* Header */}
-            <Header allCategoryMenu='false'/>
+             {/* Header */}
+             <Header allCategoryMenu='false'/>
             {/* Header /- */}
 
             {/* Page Introduction Wrapper */}
             <PageIntroductionWrapper
-                title="Sorry To Say"
+                title="New Arrivals Product"
                 linkOne="Home"
-                linkTwo="404"
+                linkTwo="New Arrivals"
             />
             {/* Page Introduction Wrapper /- */}
 
-            <NotFound/>
 
+            <CustomDeal
+                title="New Arrivals Product"
+                item='27 Items'
+            />
+
+                  
             {/* Footer */}
             <Footer/>
             {/* Footer /- */}
-
         </Fragment>
     )
 }
 
-export default NotFoundPage
+export default NewArrivalsPage

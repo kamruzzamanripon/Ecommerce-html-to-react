@@ -1,4 +1,4 @@
-import React,{Fragment, useState} from 'react'
+import React,{Fragment, useEffect, useState} from 'react'
 
 function RightComponent(props) {
     const[displayList, setDisplayList] = useState(true)
@@ -9,9 +9,14 @@ function RightComponent(props) {
         setDisplayGrid(!displayGrid)
     }
 
+    useEffect(()=>{
+        props.col==="12" ? setDisplayList(!displayList) : setDisplayList(!displayList) 
+        props.col==="12" ? setDisplayGrid(!displayGrid) : setDisplayGrid(!displayGrid) 
+    },[])
+    
     return (
         <Fragment>
-             <div className="col-lg-9 col-md-9 col-sm-12">
+             <div className={props.col==="12" ? 'col-lg-12 col-md-12 col-sm-12' : 'col-lg-9 col-md-9 col-sm-12'}>
                     {/* Page-Bar */}
                     <div className="page-bar clearfix">
                         <div className="shop-settings">

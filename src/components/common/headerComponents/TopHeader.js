@@ -1,4 +1,5 @@
 import React, {Fragment} from 'react'
+import {Link} from 'react-router-dom'
 
 function TopHeader() {
     return (
@@ -28,24 +29,24 @@ function TopHeader() {
                     </a>
                     <ul className="g-dropdown" style={{width: '200px'}}>
                       <li>
-                        <a href="cart.html">
+                        <Link to="/cart">
                           <i className="fas fa-cog u-s-m-r-9" />
-                          My Cart</a>
+                          My Cart</Link>
                       </li>
                       <li>
-                        <a href="wishlist.html">
+                      <Link to="/wishlist">
                           <i className="far fa-heart u-s-m-r-9" />
-                          My Wishlist</a>
+                          My Wishlist</Link>
                       </li>
                       <li>
-                        <a href="checkout.html">
+                      <Link to="/checkout">
                           <i className="far fa-check-circle u-s-m-r-9" />
-                          Checkout</a>
+                          Checkout</Link>
                       </li>
                       <li>
-                        <a href="account.html">
+                      <Link to="/login">
                           <i className="fas fa-sign-in-alt u-s-m-r-9" />
-                          Login / Signup</a>
+                          Login / Signup</Link>
                       </li>
                     </ul>
                   </li>

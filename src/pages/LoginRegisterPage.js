@@ -2,11 +2,9 @@ import React,{Fragment, useEffect} from 'react'
 import Header from '../components/common/Header'
 import Footer from '../components/common/Footer'
 import PageIntroductionWrapper from '../components/common/PageIntroductionWrapper'
-import NotFound from '../components/NotFound'
+import LoginRegister from '../components/LoginRegister'
 
-
-function NotFoundPage() {
-
+function LoginRegisterPage() {
     useEffect(()=>{
         window.scroll(0,0)
     })
@@ -19,13 +17,14 @@ function NotFoundPage() {
 
             {/* Page Introduction Wrapper */}
             <PageIntroductionWrapper
-                title="Sorry To Say"
+                title="Cart Element"
                 linkOne="Home"
-                linkTwo="404"
+                linkTwo="Cart"
             />
             {/* Page Introduction Wrapper /- */}
 
-            <NotFound/>
+           <LoginRegister/>
+            
 
             {/* Footer */}
             <Footer/>
@@ -35,4 +34,4 @@ function NotFoundPage() {
     )
 }
 
-export default NotFoundPage
+export default LoginRegisterPage
