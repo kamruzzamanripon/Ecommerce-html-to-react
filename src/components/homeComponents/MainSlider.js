@@ -34,7 +34,7 @@ function MainSlider() {
                 <div className="slide-content-2 slide-animation">
                     <h2 className="slide-2-h2-a">Hiking</h2>
                     <h2 className="slide-2-h2-b">Collection</h2>
-                    <h1>2018</h1>
+                    <h1>2022</h1>
                 </div>
                 </div>
                 <div className="bg-image three">

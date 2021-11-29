@@ -29,23 +29,7 @@ $(function () {
         zIndex: 100,
     });
 
-    // Bind this plugin on Product `Detail` page
-    // $('#zoom-pro').elevateZoom({
-    //     gallery: 'gallery',
-    //     galleryActiveClass: 'active',
-    //     borderSize: 1,
-    //     zoomWindowWidth: 540,
-    //     zoomWindowHeight: 540,
-    //     zoomWindowOffetx: 10,
-    //     borderColour: '#e9e9e9',
-    // });
-
-    // For `modals` we don't want to enable `zoom window`.
-    // $('#zoom-pro-quick-view').elevateZoom({
-    //     gallery: 'gallery-quick-view',
-    //     galleryActiveClass: 'active',
-    //     zoomEnabled: false, // false disables zoomwindow from showing
-    // });
+   
 
     // Bind resize select on mid header
     $('#select-category', document).ResizeSelect();
@@ -106,34 +90,7 @@ $(function () {
         element.css('display', '');
     };
 
-    /**
-     * Attach Click Event on Search Button
-     */
-    // const attachClickOnResponsiveSearchForm = function () {
-    //     $('#responsive-search').on('click', function () {
-    //         $('.responsive-search-wrapper').stop(true, true).fadeIn();
-    //     });
-
-    //     $('#responsive-search-close-button').on('click', function () {
-    //         $('.responsive-search-wrapper').stop(true, true).fadeOut();
-    //     });
-    // };
-
-    /**
-     * Attach Click Event on Mini Cart Anchor
-     */
-    // const attachClickOnMiniCart = function () {
-    //     //  let $href = $('#mini-cart-trigger'.attr('href');
-    //     //   window.location.href = $href; //causes the browser to refresh and
-    //     // load the requested url
-    //     $('#mini-cart-trigger').on('click', function () {
-    //         $('.mini-cart-wrapper').addClass('mini-cart-open');
-    //     });
-
-    //     $('#mini-cart-close').on('click', function () {
-    //         $('.mini-cart-wrapper').removeClass('mini-cart-open');
-    //     });
-    // };
+    
 
     /**
      * Attach Click Event on VMenu
@@ -178,52 +135,7 @@ $(function () {
         $allListItemsForHover.off('mouseleave');
     };
 
-    /**
-     * Backdrop only works on landscape mode this function will Check
-     * if user wants to show or hide the backdrop
-     */
-    // const mainBackDropManipulator = function () {
-    //     if (settings.bodyBackDropOnScenes) {
-    //         if (mode === 'landscape' && !listItembackDropFlag) {
-    //             // If body has length equal to zero then it means our element is
-    //             // not added, if it did'nt have length equal to zero then it
-    //             // means our element is added.
-    //             if ($('#app').find('.body-backdrop').length === 0) {
-    //                 $('#app').append('<div class="body-backdrop"></div>\n');
-    //                 // Assign Back Drop
-    //                 $backDrop = $('div.body-backdrop');
-    //                 // Input type Text
-    //                 $searchFormElement = $('#search-landscape');
-    //                 $searchFormWrapper = $('.form-searchbox');
-    //                 $searchFormElement.focus(function () {
-    //                     // I Hope elements are appropriate assign
-    //                     $searchFormWrapper.css({'position': 'relative', 'z-index': settings.zIndexNumber});
-    //                     // Show Back Drop
-    //                     showBackDrop($backDrop);
-    //                 }).blur(function () {
-    //                     // I Hope elements are appropriate assign
-    //                     $searchFormWrapper.css({'position': '', 'z-index': ''});
-    //                     // Remove Back Drop
-    //                     removeBackDrop($backDrop);
-    //                 });
-    //                 // First Time invocation
-    //                 // HoverOn list items that have class `js-backdrop`
-    //                 hoverOnListItems();
-    //                 // Flag is set to true
-    //                 listItembackDropFlag = true;
-    //             }
-    //         }
-
-    //         if (mode === 'landscape' && listItembackDropFlag) {
-    //             // It means hover is On
-    //             hoverOnListItems();
-    //         } else if (mode === 'portrait' && listItembackDropFlag) {
-    //             // Hover is Off
-    //             hoverOffListItems();
-    //         }
-    //     }
-
-    // };
+    
     /**
      * Manually Restart Pace-js when we change any tab.
      */
@@ -339,175 +251,15 @@ $(function () {
 /*============================================================================*/
 (function ($, window, document) {
     'use strict';
-    /**
-     * Shows Newsletter Modal After 5sec = 5000milliseconds
-     */
-    // const showNewsletterModal = function () {
-    //         setTimeout(function () {
-    //             // Manually opens a modal
-    //             $('#newsletter-modal').modal('show');
-    //         }, 5000);
-    // };
-    /**
-     * Initialize Main Slider
-     */
-    // const sliderMain = function () {
-    //     let $owl = $('.slider-main');
-    //     $owl.owlCarousel({
-    //         items: 1,
-    //         autoplay: true,
-	// 		autoplayTimeout: 8000,
-    //         loop: false,
-    //         dots: false,
-    //         rewind: true, // Go backwards when the boundary has reached
-    //         nav: true,// Show next/prev buttons
-    //         //   navContainerClass: 'owl-nav' by default,
-    //         navElement: 'div',
-    //         navClass: ['main-slider-previous', 'main-slider-next'],// Add these classes on navElement
-    //         navText: ['<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>'], // by default text prev, next will not show
-    //     });
-
-    // };
-    /**
-     * Initialize owl-carousel for all product-place section on page
-     */
-    // const productSlider = function () {
-    //     // Get Collection of all Product Slider
-    //     let $productsSlider = $('.products-slider');
-    //     $productsSlider.on('initialize.owl.carousel',function () {
-    //        $(this).closest('.slider-fouc').removeAttr('class');
-    //     }).each(function () {
-    //         let thisInstance = $(this);
-    //         let itemPerLine = thisInstance.data('item');
-    //         thisInstance.owlCarousel({
-    //             autoplay: false,
-    //             loop: false,
-    //             dots: false,
-    //             rewind: true,
-    //             nav: true,
-    //             navElement: 'div',
-    //             navClass: ['product-slider-previous', 'product-slider-next'],
-    //             navText: ['<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>'],
-    //             responsive: {
-    //                 0: {
-    //                     items: 1,
-    //                 },
-    //                 768: {
-    //                     items: itemPerLine - 2,
-    //                 },
-    //                 991: {
-    //                     items: itemPerLine - 1,
-    //                 },
-    //                 1200: {
-    //                     items: itemPerLine,
-    //                 },
-    //             }
-    //         });
-    //     });
-    // };
-    /**
-     * Initialize owl-carousel for all Specific Category section on page
-     */
-    // const SpecificCategorySlider = function () {
-    //     // Get Collection of all Product Slider
-    //     let $specificCategorySlider = $('.specific-category-slider');
-    //     $specificCategorySlider.on('initialize.owl.carousel',function () {
-    //         $(this).closest('.slider-fouc').removeAttr('class');
-    //     }).each(function () {
-    //         let thisInstance = $(this);
-    //         let itemPerLine = thisInstance.data('item');
-    //         thisInstance.owlCarousel({
-    //             autoplay: false,
-    //             loop: false,
-    //             dots: false,
-    //             rewind: true,
-    //             nav: true,
-    //             navElement: 'div',
-    //             navClass: ['specific-category-slider-previous', 'specific-category-slider-next'],
-    //             navText: ['<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>'],
-    //             responsive: {
-    //                 0: {
-    //                     items: 1,
-    //                 },
-    //                 768: {
-    //                     items: 2,
-    //                 },
-    //                 991: {
-    //                     items: itemPerLine -1,
-    //                 },
-    //                 1200: {
-    //                     items: itemPerLine,
-    //                 },
-    //             }
-    //         });
-    //     });
-    // };
-    /**
-     * On Product Slider Tabs: If content is hidden, Owl-carousel refuses to get the dimensions,
-     * Sounds like because by default un-active `tab` is set to "display: none"
-     * so it can't get the dimensions. Thus we Manually refresh the position on tab change.
-     */
-    const onTabChangeRefreshPositionOfCarousel = function () {
-        // When showing a new tab, the events fire.
-        // Specificity = 2
-        $('.section-maker [data-toggle="tab"]').on('shown.bs.tab', function (e) {
-            // Get the current click id of tab
-            let $currentID = $(e.target).attr('href');
-            // Trigger refresh `event` to current active `tab`
-            $($currentID + '.active').children().trigger('refresh.owl.carousel');
-        });
-
-    };
-    /**
-     * Initialize owl-carousel for brand slider
-     */
-    // const brandSlider = function () {
-    //     let thisInstance = $('.brand-slider-content');
-    //     let itemPerLine = thisInstance.data('item');
-    //     thisInstance.owlCarousel({
-    //         autoplay: true,
-	// 		autoplayTimeout: 8000,
-    //         loop: false,
-    //         dots: false,
-    //         rewind: true,
-    //         nav: true,
-    //         navElement: 'div',
-    //         navClass: ['brand-slider-previous', 'brand-slider-next'],
-    //         navText: ['<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>'],
-    //         responsive: {
-    //             0: {
-    //                 items: 1,
-    //             },
-    //             768: {
-    //                 items: 3,
-    //             },
-    //             991: {
-    //                 items: itemPerLine,
-    //             },
-    //             1200: {
-    //                 items: itemPerLine,
-    //             },
-    //         }
-    //     });
-    // };
+   
 
 
 
     $(function () {
-        //sliderMain();
-        //productSlider();
-        //SpecificCategorySlider();
         onTabChangeRefreshPositionOfCarousel();
-        //brandSlider();
     });
 
-    /**
-     * Check everything including DOM elements and images loaded
-     */
-    // $(window).on('load',function () {
-    //     showNewsletterModal();
-    //    $('.ph-item').removeClass('ph-item');
-    // });
+   
 
 })(jQuery, window, document);
 
@@ -556,95 +308,7 @@ $(function () {
 })(jQuery, window, document);
 
 
-/*============================================================================*/
-/* Product-Detail-page JavaScript functions
-/*============================================================================*/
-(function ($, window, document) {
-    'use strict';
-    //  Variables
-    // let $ratingField = $('#your-rating-value');
-    // let $starWidth = $('#your-stars');
-    // let $starComment = $('#star-comment');
 
-
-
-    /**
-     * Rating Stars Control
-     */
-    // const ratingStarsControl = function () {
-    //     let oneStarWidth = 15; // 15 * 5 = 75
-    //     let newStarWidth;
-    //     let ratingthresholdNumber = 5;
-    //     let comment;
-    //     let currentVal;
-    //     // On Every key type
-    //     $ratingField.on('keyup',function () {
-    //         // Reset Star Width
-    //         $starWidth.css('width',0);
-    //         // Reset Comment
-    //         $starComment.text('');
-    //         // Always remember when when you enter any number and immediately enter some strings then parseFloat
-    //         // function will truncate those strings and just only parse number so that's why i'm using this
-    //         // check isNumeric
-    //         if ($.isNumeric($ratingField.val())) {
-    //             currentVal = parseFloat($ratingField.val());
-    //         } else {
-    //             currentVal = NaN;
-    //         }
-    //         /*
-    //          * Format values
-    //          * In JS if variable is not convert to number then by default variable is NaN.
-    //          * We known JS has Truthy & Falsey values.
-    //          * By default NaN (e.g. the result of 1/0) is false so its convert to true and expression
-    //          * becomes true.
-    //          */
-    //         if ( !currentVal || currentVal === '' || currentVal === 'NaN' || currentVal === 0) {
-    //             // if value is NaN
-    //             currentVal = 0;
-    //             $starWidth.css('width',0);
-    //             $starComment.text('');
-    //         } else {
-    //             if ( (currentVal >=1) && (currentVal <= ratingthresholdNumber)) {
-
-    //                 if (currentVal === 1 ) {
-    //                     comment = 'I hate it.';
-    //                 }
-    //                 else if(currentVal === 2 ) {
-    //                     comment = "I don't like it.";
-    //                 }
-    //                 else if(currentVal === 3 ) {
-    //                     comment = "It's OK.";
-    //                 }
-    //                 else if(currentVal === 4 ) {
-    //                     comment = "I like it.";
-    //                 }
-    //                 else if(currentVal === 5 ) {
-    //                     comment = "It's Perfect.";
-    //                 }
-    //                 // Precise Float value to only one decimal. example: 2.454544 to 2.5
-    //                 currentVal = currentVal.toFixed(1);
-    //                 // Manipulate Stars Width
-    //                 newStarWidth = oneStarWidth * currentVal;
-    //                 // Remove decimals from a variable, Convert float value to downward
-    //                 newStarWidth = Math.floor(newStarWidth);
-    //                 // Update Star Width
-    //                 $starWidth.css('width',newStarWidth);
-    //                 // Add Comment
-    //                 $starComment.text(comment);
-    //             }
-    //         }
-    //     });
-
-    // };
-
-
-
-    $(function () {
-        // Rating Stars Control
-        //ratingStarsControl();
-    });
-
-})(jQuery, window, document);
 
 /*============================================================================*/
 /* Shop-page JavaScript functions

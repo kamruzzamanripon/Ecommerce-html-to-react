@@ -3,6 +3,15 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import 'animate.css';
+import '../src/assets/css/bootstrap.min.css';
+import '../src/assets/css/fontawesome.css';
+import '../src/assets/css/thirdparty.css';
+
+
+
+import '../src/assets/css/bundle.css';
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
