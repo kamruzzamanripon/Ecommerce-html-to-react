@@ -21,7 +21,7 @@ function ExclusiveDealsPage() {
             <PageIntroductionWrapper
                 title="Exclusive Product"
                 linkOne="Home"
-                linkTwo="New Arrivals"
+                linkTwo="Exclusive Product"
             />
             {/* Page Introduction Wrapper /- */}
 

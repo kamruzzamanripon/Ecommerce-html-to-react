@@ -2,10 +2,10 @@ import React,{Fragment, useEffect} from 'react'
 
 import Header from '../components/common/Header'
 import PageIntroductionWrapper from '../components/common/PageIntroductionWrapper'
+import BlogSingle from '../components/BlogSingle'
 import Footer from '../components/common/Footer'
-import TrackOrder from '../components/TrackOrder'
 
-function TrackOrderPage() {
+function BlogSinglePage() {
 
     useEffect(()=>{
         window.scroll(0,0)
@@ -19,14 +19,14 @@ function TrackOrderPage() {
 
             {/* Page Introduction Wrapper */}
             <PageIntroductionWrapper
-                title="Track Order"
+                title="Blog"
                 linkOne="Home"
-                linkTwo="Track Order"
+                linkTwo="Blog"
             />
             {/* Page Introduction Wrapper /- */}
 
 
-            <TrackOrder/>
+            <BlogSingle/>
 
                   
             {/* Footer */}
@@ -36,4 +36,4 @@ function TrackOrderPage() {
     )
 }
 
-export default TrackOrderPage
+export default BlogSinglePage

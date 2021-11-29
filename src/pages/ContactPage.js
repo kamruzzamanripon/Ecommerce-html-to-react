@@ -19,9 +19,9 @@ function ContactPage() {
 
             {/* Page Introduction Wrapper */}
             <PageIntroductionWrapper
-                title="Directory"
+                title="Contact"
                 linkOne="Home"
-                linkTwo="Drectory"
+                linkTwo="Contact"
             />
             {/* Page Introduction Wrapper /- */}
 

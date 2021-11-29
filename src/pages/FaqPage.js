@@ -19,9 +19,9 @@ function FaqPage() {
 
             {/* Page Introduction Wrapper */}
             <PageIntroductionWrapper
-                title="Directory"
+                title="FAQ"
                 linkOne="Home"
-                linkTwo="Drectory"
+                linkTwo="FAQ"
             />
             {/* Page Introduction Wrapper /- */}
 

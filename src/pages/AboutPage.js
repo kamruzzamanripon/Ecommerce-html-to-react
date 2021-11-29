@@ -19,9 +19,9 @@ function AboutPage() {
 
             {/* Page Introduction Wrapper */}
             <PageIntroductionWrapper
-                title="Directory"
+                title="About"
                 linkOne="Home"
-                linkTwo="Drectory"
+                linkTwo="About"
             />
             {/* Page Introduction Wrapper /- */}
 

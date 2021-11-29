@@ -22,6 +22,8 @@ import WhishListPage from '../pages/WhishListPage';
 import ExclusiveDealsPage from '../pages/ExclusiveDealsPage';
 import FlashDealsPage from '../pages/FlashDealsPage';
 import SuperSalePage from '../pages/SuperSalePage';
+import BlogPage from '../pages/BlogPage';
+import BlogSinglePage from '../pages/BlogSinglePage';
 
 
 function AppRoute() {
@@ -44,6 +46,9 @@ function AppRoute() {
                 <Route  path="/exclusive-deals" element={<ExclusiveDealsPage />} />
                 <Route  path="/flash-deals" element={<FlashDealsPage />} />
                 <Route  path="/super-sale" element={<SuperSalePage />} />
+
+                <Route  path="/blog/*" element={<BlogPage />} />
+                <Route  path="/blog/single" element={<BlogSinglePage />} /> 
 
                 <Route  path="/directory" element={<DirectoryPage />} />
                 <Route  path="/terms-conditions" element={<TermsAndConditionsPage />} />

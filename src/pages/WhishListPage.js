@@ -18,9 +18,9 @@ function WhishListPage() {
 
             {/* Page Introduction Wrapper */}
             <PageIntroductionWrapper
-                title="Cart Element"
+                title="Whish List"
                 linkOne="Home"
-                linkTwo="Cart"
+                linkTwo="Whish list"
             />
             {/* Page Introduction Wrapper /- */}
 

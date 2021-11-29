@@ -21,7 +21,7 @@ function SuperSalePage() {
             <PageIntroductionWrapper
                 title="Super Sale"
                 linkOne="Home"
-                linkTwo="New Arrivals"
+                linkTwo="Super Sale"
             />
             {/* Page Introduction Wrapper /- */}
 

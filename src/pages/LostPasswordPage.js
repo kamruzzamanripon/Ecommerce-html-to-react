@@ -17,9 +17,9 @@ function LostPasswordPage() {
 
             {/* Page Introduction Wrapper */}
             <PageIntroductionWrapper
-                title="Cart Element"
+                title="Lost Password"
                 linkOne="Home"
-                linkTwo="Cart"
+                linkTwo="Lost Password"
             />
             {/* Page Introduction Wrapper /- */}
 

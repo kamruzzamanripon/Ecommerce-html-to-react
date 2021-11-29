@@ -17,9 +17,9 @@ function CheckOutPage() {
 
             {/* Page Introduction Wrapper */}
             <PageIntroductionWrapper
-                title="Cart Element"
+                title="Check Out"
                 linkOne="Home"
-                linkTwo="Cart"
+                linkTwo="Check Out"
             />
             {/* Page Introduction Wrapper /- */}
 

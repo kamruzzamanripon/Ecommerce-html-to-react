@@ -21,7 +21,7 @@ function FlashDealsPage() {
             <PageIntroductionWrapper
                 title="Flash Deal"
                 linkOne="Home"
-                linkTwo="New Arrivals"
+                linkTwo="Flash Deal"
             />
             {/* Page Introduction Wrapper /- */}
 

@@ -17,9 +17,9 @@ function LoginRegisterPage() {
 
             {/* Page Introduction Wrapper */}
             <PageIntroductionWrapper
-                title="Cart Element"
+                title="Login OR Regisger"
                 linkOne="Home"
-                linkTwo="Cart"
+                linkTwo="login || Register"
             />
             {/* Page Introduction Wrapper /- */}
 
