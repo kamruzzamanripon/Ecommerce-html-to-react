@@ -1,6 +1,10 @@
-import React, {Fragment, useEffect} from 'react'
+import React, { Fragment, useEffect } from 'react'
 import Footer from '../components/common/Footer'
 import Header from '../components/common/Header'
+import DummySelectBox from '../components/common/responsiveAndOtherComponents/DummySelectBox'
+import NewsLetterModal from '../components/common/responsiveAndOtherComponents/NewsLetterModal'
+import QuickViewModal from '../components/common/responsiveAndOtherComponents/QuickViewModal'
+import ResponsiveSearch from '../components/common/responsiveAndOtherComponents/ResponsiveSearch'
 import BannerImageViewMore from '../components/homeComponents/BannerImageViewMore'
 import BannerLayer from '../components/homeComponents/BannerLayer'
 import BooksAudible from '../components/homeComponents/BooksAudible'
@@ -14,10 +18,6 @@ import MobilesTablets from '../components/homeComponents/MobilesTablets'
 import SitePriorities from '../components/homeComponents/SitePriorities'
 import ToysHobbiesRobots from '../components/homeComponents/ToysHobbiesRobots'
 import WomenClothing from '../components/homeComponents/WomenClothing'
-import DummySelectBox from '../components/common/responsiveAndOtherComponents/DummySelectBox'
-import ResponsiveSearch from '../components/common/responsiveAndOtherComponents/ResponsiveSearch'
-import NewsLetterModal from '../components/common/responsiveAndOtherComponents/NewsLetterModal'
-import QuickViewModal from '../components/common/responsiveAndOtherComponents/QuickViewModal'
 
 function HomePage() {
 
