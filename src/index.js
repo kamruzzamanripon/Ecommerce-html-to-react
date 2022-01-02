@@ -1,14 +1,13 @@
 import 'animate.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import '../src/assets/css/bootstrap.min.css';
 import '../src/assets/css/bundle.css';
 import '../src/assets/css/fontawesome.css';
 import '../src/assets/css/thirdparty.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
-
 
 
 
